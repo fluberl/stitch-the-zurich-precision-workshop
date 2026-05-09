@@ -12,16 +12,18 @@ Phase 1 - content and conversion clarity on current single-page implementation.
 - Phase 1 stays within `index.html`; no structural rebuild yet.
 - Priority order: facilitator clarity -> 3-day flow -> outcomes boundaries -> CTA journey.
 - Copy tone: calm authority, no hype, no startup language.
+- Language: site is **English-first** for current deployment; full German localization/versioning comes after content and structure stabilize. Some German copy may remain temporarily during refinement.
 - Claims must be specific and supportable in workshop operations.
 - [2026-05-09] Operational integration architecture documented in `OPERATIONS_ARCHITECTURE.md` with FluentCRM as primary relationship memory.
 - [2026-05-09] CE/GHL remains optional reminder/calendar support only, not system of record.
+- Ulf facilitator PRIMARY EMPHASIS in `index.html` is locked to the approved bio (orchestral musician background; subsequent orchestras as AT/movement coach; Stuttgart; Dr. Holdener spine and trauma practice; Master’s in Public Health).
 
 ## Open Questions
 
 - What is the exact application endpoint (form, email, or booking system)?
 - What response time can be reliably promised after application?
 - Is primary language German, English, or mixed by section?
-- Which facilitator credentials should be presented publicly?
+- Vincent: any further credential or PRIMARY EMPHASIS edits needed for public presentation?
 - Which outcomes can be phrased as measurable participant changes?
 - Stripe phase: use Payment Link or Invoice as first payment object?
 

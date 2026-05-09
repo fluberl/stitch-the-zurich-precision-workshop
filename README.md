@@ -26,6 +26,7 @@ Phase 1 focuses on high-impact content and structure improvements without major 
 
 ## Source of Truth
 
+- Facilitator profile copy (including PRIMARY EMPHASIS bios): Facilitators section in `index.html`
 - `DESIGN.md`: visual and system principles (color, type, spacing, shape language)
 - `README.md`: project intent, editing rules, and scope
 - `PROJECT_NOTES.md`: active decisions, open questions, and deferred items
@@ -56,6 +57,8 @@ Phase 1 focuses on high-impact content and structure improvements without major 
 - Do not add claims that cannot be operationally supported.
 
 ## Content Standards
+
+**Content policy:** English-first implementation. German localization/versioning will follow after structure and wording stabilize. Temporary mixed-language development states are acceptable during refinement.
 
 - **Audience fit:** describe who benefits, and who does not.
 - **Method clarity:** explain process, not abstractions.
