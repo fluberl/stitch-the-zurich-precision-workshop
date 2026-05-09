@@ -32,6 +32,7 @@ Phase 1 focuses on high-impact content and structure improvements without major 
 - `OPERATIONS_ARCHITECTURE.md`: operational relationship flows (contact, application, CRM states, communications, payment phase)
 - `COMMUNICATION_RUNBOOK.md`: transactional templates, automation boundaries, and SLA policy
 - `PAYMENT_STATE_CONTRACT.md`: Stripe deposit trigger rules and CRM payment-state contract
+- `WORDPRESS_FORM_INTEGRATION_CHECKLIST.md`: practical setup checklist for Fluent Forms/FluentCRM integration
 
 ## Section Map (`index.html`)
 
