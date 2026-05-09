@@ -29,6 +29,9 @@ Phase 1 focuses on high-impact content and structure improvements without major 
 - `DESIGN.md`: visual and system principles (color, type, spacing, shape language)
 - `README.md`: project intent, editing rules, and scope
 - `PROJECT_NOTES.md`: active decisions, open questions, and deferred items
+- `OPERATIONS_ARCHITECTURE.md`: operational relationship flows (contact, application, CRM states, communications, payment phase)
+- `COMMUNICATION_RUNBOOK.md`: transactional templates, automation boundaries, and SLA policy
+- `PAYMENT_STATE_CONTRACT.md`: Stripe deposit trigger rules and CRM payment-state contract
 
 ## Section Map (`index.html`)
 
@@ -63,7 +66,7 @@ Phase 1 focuses on high-impact content and structure improvements without major 
 
 1. Update copy in `index.html` according to Phase 1 backlog.
 2. Record key decisions and unresolved questions in `PROJECT_NOTES.md`.
-3. Check for consistency against `DESIGN.md` and this README.
+3. Check for consistency against `DESIGN.md`, `OPERATIONS_ARCHITECTURE.md`, and this README.
 4. Keep changes small and reviewable.
 
 ## Next After Phase 1

@@ -13,6 +13,8 @@ Phase 1 - content and conversion clarity on current single-page implementation.
 - Priority order: facilitator clarity -> 3-day flow -> outcomes boundaries -> CTA journey.
 - Copy tone: calm authority, no hype, no startup language.
 - Claims must be specific and supportable in workshop operations.
+- [2026-05-09] Operational integration architecture documented in `OPERATIONS_ARCHITECTURE.md` with FluentCRM as primary relationship memory.
+- [2026-05-09] CE/GHL remains optional reminder/calendar support only, not system of record.
 
 ## Open Questions
 
@@ -21,6 +23,7 @@ Phase 1 - content and conversion clarity on current single-page implementation.
 - Is primary language German, English, or mixed by section?
 - Which facilitator credentials should be presented publicly?
 - Which outcomes can be phrased as measurable participant changes?
+- Stripe phase: use Payment Link or Invoice as first payment object?
 
 ## Assumptions
 
