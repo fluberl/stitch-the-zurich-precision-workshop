@@ -17,6 +17,7 @@ Phase 1 - content and conversion clarity on current single-page implementation.
 - [2026-05-09] Operational integration architecture documented in `OPERATIONS_ARCHITECTURE.md` with FluentCRM as primary relationship memory.
 - [2026-05-09] CE/GHL remains optional reminder/calendar support only, not system of record.
 - Ulf facilitator PRIMARY EMPHASIS in `index.html` is locked to the approved bio (orchestral musician background; subsequent orchestras as AT/movement coach; Stuttgart; Dr. Holdener spine and trauma practice; Master’s in Public Health).
+- [2026-06-02] Facilitator cards use photo-first ordering (name → positioning sentence → portrait → credentials). Face establishes identity before credentials are read; this matches how trust is built in a professional context where the person precedes the CV.
 
 ## Open Questions
 
