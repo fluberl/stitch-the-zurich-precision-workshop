@@ -155,7 +155,10 @@
 <!-- TopNavBar -->
 <nav class="bg-surface/90 backdrop-blur-md border-b border-outline-variant fixed top-0 z-50 w-full">
 <div class="flex justify-between items-center px-3 sm:px-stack-lg md:px-margin py-stack-md w-full max-w-[1440px] mx-auto">
-<a class="font-h2 text-h2 font-medium tracking-tight text-primary" href="#">Leading &amp; Following</a>
+<a class="block leading-none text-primary hover:opacity-90 transition-opacity" href="#">
+<span class="font-h2 text-h2 font-medium tracking-tight block">Führen &amp; Folgen</span>
+<span class="mt-1 block font-body-md text-[13px] font-normal leading-snug tracking-[0.06em] text-secondary">Leading &amp; Following</span>
+</a>
 <div class="hidden md:flex items-center gap-stack-lg">
 <a class="font-body-sm tracking-tight text-secondary hover:text-primary transition-colors" href="#overview">Overview</a>
 <a class="font-body-sm tracking-tight text-secondary hover:text-primary transition-colors" href="#facilitators">Facilitators</a>
@@ -178,71 +181,85 @@
 </div>
 </nav>
 <main class="pt-[80px]">
-<!-- Hero Section -->
-<section class="px-margin py-stack-xl lg:py-[120px] max-w-[1440px] mx-auto" id="overview">
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter items-center">
+<!-- Screen 1: Phenomenon -->
+<section class="px-margin pt-stack-xl lg:pt-[100px] pb-stack-md lg:pb-stack-lg max-w-[1440px] mx-auto" id="overview">
+<h1 class="font-display text-display mb-stack-lg">When pressure rises, what happens to timing, contact, and coordination?</h1>
+<div class="grid w-full grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
 <div class="lg:col-span-7">
-<h1 class="font-display text-display mb-stack-lg max-w-[800px]">Leading &amp; Following</h1>
-<p class="font-body-lg text-body-lg text-secondary mb-stack-xl max-w-[550px]">For professionals and performers who want to stay clear, coordinated, and effective under pressure.</p>
-<div class="flex flex-wrap gap-stack-md">
-<a class="inline-block bg-primary text-on-primary px-stack-xl py-stack-md font-label-caps text-label-caps uppercase tracking-widest hover:bg-opacity-90 transition-all" data-link="application" href="#">Start Application</a>
-<a class="inline-block border border-outline px-stack-xl py-stack-md font-label-caps text-label-caps uppercase tracking-widest hover:bg-surface-container transition-all" data-link="contact" href="#">Request Workshop Information</a>
-<a class="inline-block border border-outline px-stack-xl py-stack-md font-label-caps text-label-caps uppercase tracking-widest hover:bg-surface-container transition-all" href="#workshop">Learn More</a>
+<p class="font-body-lg text-body-lg text-secondary mb-stack-md">Many skilled people know exactly what to do — and still lose access in the moment that matters.</p>
+<p class="text-body-md text-secondary mb-stack-md">It can show up as hesitation, over-control, a delayed response, or interaction that suddenly takes far too much effort. Often it is not missing knowledge. Something shifts in the situation itself — between you and others — when the demand is real.</p>
+<p class="text-body-md text-secondary mb-stack-md">We look at this through <em>leading and following</em>: not as roles to perform on a stage, but as a clear way to see what is already happening between people when pressure builds.</p>
+<p class="font-body-sm text-on-surface-variant">Führen &amp; Folgen · Leading &amp; Following</p>
+</div>
+<div class="lg:col-span-5 flex items-start justify-center">
+<img alt="Figure seen from behind, stepping forward with one hand raised and a stick held at the side." class="w-full max-h-[min(80vh,736px)] object-contain" src="images/Vincentina.png"/>
 </div>
 </div>
-<div class="lg:col-span-5 aspect-square bg-surface-container overflow-hidden">
-<img alt="Architectural Pillars" class="w-full h-full object-cover grayscale opacity-90" data-alt="A minimalist architectural shot of two clean, dark-colored stone pillars standing in a vast, sun-drenched white concrete hall." src="https://lh3.googleusercontent.com/aida-public/AB6AXuALX4vzyqmAtFRr65ZusFlU-J7oA3dHOa3KZorgH7RlpMapeemGru2AMrHKGQmXkbJxo-2xDYEQXtOh_j4k0cQp5yq6RfsedG30R2RihC7O7pLDLD5u0wp8-x7NB8UkfaBx5uoQCXdwfOYX8muTMl5akRzjnpioQk-gjDo9RSUJKuuh2csZHET6coAXBzLFxYeBXHWRTG_QJ7E5qks9bOK2IKGRd3ToG83SNFBqlD5HaZEvIOWKjimW6AY8cnTo-ieJ2iwgycjjXJFA"/>
-</div>
+<div class="mt-stack-xl flex w-full flex-col flex-wrap items-center justify-center gap-stack-md sm:flex-row">
+<a class="inline-block bg-primary text-on-primary px-stack-xl py-stack-md font-label-caps text-label-caps uppercase tracking-widest hover:bg-opacity-90 transition-all" href="#workshop">Is this relevant for me?</a>
+<a class="inline-block border border-outline px-stack-xl py-stack-md font-label-caps text-label-caps uppercase tracking-widest hover:bg-surface-container transition-all" data-link="application" href="#">Apply for October</a>
+<a class="inline-block border border-outline px-stack-xl py-stack-md font-label-caps text-label-caps uppercase tracking-widest hover:bg-surface-container transition-all" data-link="contact" href="#">Ask a question</a>
 </div>
 </section>
-<!-- Recognition Section (The Problem) -->
-<section class="px-3 sm:px-stack-lg md:px-margin py-stack-lg sm:py-stack-xl lg:py-[120px] max-w-[1440px] mx-auto border-t border-outline-variant">
-<div class="max-w-[900px]">
-<span class="font-label-caps text-label-caps text-secondary mb-stack-md block">DIAGNOSE</span>
-<h2 class="font-h1 text-[34px] sm:text-[40px] md:text-display mb-stack-lg sm:mb-stack-xl leading-[1.18] md:leading-tight max-w-none md:max-w-[24ch]">Du weißt, was zu tun ist – aber im entscheidenden Moment funktioniert es nicht?</h2>
+<!-- Screen 2: Workshop container -->
+<section class="px-margin pt-stack-md sm:pt-stack-md lg:pt-stack-lg pb-stack-xl lg:pb-[120px] max-w-[1440px] mx-auto border-t border-outline-variant" id="workshop">
+<span class="font-label-caps text-label-caps text-secondary mb-stack-sm block">Zurich · October 2026</span>
+<h2 class="font-h1 text-h1 mb-stack-md">A three-day workshop in Zurich for people who need reliable interaction under pressure</h2>
+<div class="max-w-7xl w-full">
+<p class="font-body-md text-secondary mb-stack-lg">16–18 October 2026 · Zurich · 12–15 participants</p>
+<p class="text-body-md text-secondary mb-stack-md">This is where the work happens in practice. Simple tasks, live feedback, small group. You work with what changes in timing, coordination, and contact when demand increases — in yourself and with others.</p>
+<p class="text-body-md text-secondary mb-stack-md"><em>Leading &amp; Following</em> is the setting we use: a precise way to make these dynamics visible. The workshop does not invent them. You already meet them in meetings, performance, leadership moments, and team coordination. Here they become clear enough to work with.</p>
+<p class="text-body-md text-secondary mb-stack-md">In short: how you orient and act with others when conditions shift — under pressure, in contact, in real time. That is what the three days are for.</p>
+<p class="text-body-md text-secondary mb-stack-xl">Direct, physical, feedback-rich practice. Not therapy. Not a motivational seminar. Not performance display or charisma training.</p>
+</div>
+<div class="mt-stack-xl flex w-full flex-col flex-wrap items-center justify-center gap-stack-md sm:flex-row">
+<a class="inline-block bg-primary text-on-primary px-stack-xl py-stack-md font-label-caps text-label-caps uppercase tracking-widest hover:bg-opacity-90 transition-all" data-link="application" href="#">Start application</a>
+<a class="inline-block border border-outline px-stack-xl py-stack-md font-label-caps text-label-caps uppercase tracking-widest hover:bg-surface-container transition-all" href="#workshop-structure">How the three days work</a>
+<a class="inline-block border border-outline px-stack-xl py-stack-md font-label-caps text-label-caps uppercase tracking-widest hover:bg-surface-container transition-all" data-link="contact" href="#">Ask before you apply</a>
+</div>
+</section>
+<!-- Screen 3: Orientation -->
+<section class="px-margin pt-stack-lg sm:pt-stack-xl lg:pt-[120px] pb-stack-lg sm:pb-stack-xl lg:pb-stack-xl max-w-[1440px] mx-auto border-t border-outline-variant bg-surface-container-low" id="orientation">
+<div class="max-w-7xl w-full">
+<div>
+<span class="font-label-caps text-label-caps text-secondary mb-stack-md block">What this work is</span>
+<h2 class="font-h1 text-h1 mb-stack-lg">The dynamics are already in your work. The workshop makes them visible.</h2>
+<p class="text-body-md text-secondary">Most people come with years of training, experience, and professional judgment. Under pressure, what fails is often not judgment itself but access: to timing, to contact, to a clear next move while something is happening between you and others. The subject is how you navigate human situations in relationship when conditions change. <em>Leading and following</em> are the doorway into that — not the destination.</p>
+</div>
+<div class="border-t border-outline-variant pt-stack-xl mt-stack-xl">
+<h3 class="font-h3 text-h3 mb-stack-sm">How the workshop works</h3>
+<p class="text-body-md text-secondary">You work through practical tasks with immediate feedback. Movement and partner work are used to see what is happening — hesitation, effort, timing, adaptation — not as an aesthetic performance. Two facilitators observe from complementary angles: what happens in you under pressure, and what happens in the interaction. Practice, observation, adjustment — repeated until shifts show in action.</p>
+</div>
+<div class="w-full bg-surface-container border border-outline-variant mt-28 mb-24 pt-12 px-stack-lg pb-stack-lg md:px-stack-xl md:pb-stack-xl">
 <div class="grid grid-cols-1 md:grid-cols-2 gap-stack-xl">
 <div>
-<p class="font-h3 text-h3 mb-stack-sm">Loss of Access</p>
-<p class="text-secondary font-body-md">The expertise you have practiced for years becomes unreachable under stress. Your body reacts before your professional mind can intervene.</p>
+<h3 class="font-h3 text-h3 mb-stack-md">For whom</h3>
+<ul class="text-body-sm text-secondary space-y-stack-sm">
+<li>You work in roles where interaction quality and timing matter under pressure.</li>
+<li>You are willing to receive direct feedback and stay in live practice.</li>
+<li>You will show up physically in a small professional group.</li>
+</ul>
 </div>
 <div>
-<p class="font-h3 text-h3 mb-stack-sm">Hesitation</p>
-<p class="text-secondary font-body-md">The critical moment passes while you are still negotiating the internal response. Friction between intention and execution creates fatal delays.</p>
+<h3 class="font-h3 text-h3 mb-stack-md">Not for whom</h3>
+<ul class="text-body-sm text-secondary space-y-stack-sm">
+<li>You want a passive talk or a retreat atmosphere.</li>
+<li>You expect performative presentation or charisma training.</li>
+<li>You are not ready for iterative adjustment in real interaction.</li>
+</ul>
 </div>
 </div>
 </div>
-</section>
-<!-- Workshop Explanation & Benefits -->
-<section class="bg-primary text-on-primary py-stack-xl lg:py-[120px]" id="workshop">
-<div class="px-margin max-w-[1440px] mx-auto">
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter mb-stack-xl">
-<div class="lg:col-span-6">
-<span class="font-label-caps text-label-caps text-on-primary-container mb-stack-md block">THE WORKSHOP</span>
-<h2 class="font-h1 text-h1 mb-stack-lg">Reliability through Interaction</h2>
-<p class="font-body-lg text-on-primary-container opacity-90 max-w-[500px]">This is not about theory. We focus on real-time reliability. How you stay functional, improve timing, and reduce the massive effort usually required to manage complex social or performance dynamics.</p>
+<p class="text-body-md text-secondary mb-stack-lg">We use a short application and a conversation to confirm fit — for you and for the group.</p>
+<div class="mb-stack-md flex w-full flex-col flex-wrap items-center justify-center gap-stack-md sm:flex-row">
+<a class="inline-block bg-primary text-on-primary px-stack-xl py-stack-md font-label-caps text-label-caps uppercase tracking-widest hover:bg-opacity-90 transition-all" data-link="application" href="#">Start application</a>
+<a class="inline-block border border-outline px-stack-xl py-stack-md font-label-caps text-label-caps uppercase tracking-widest hover:bg-surface-container transition-all" data-link="contact" href="#">Request workshop information</a>
 </div>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-stack-lg mt-stack-xl">
-<div class="p-stack-lg border border-on-primary-container/20">
-<span class="material-symbols-outlined mb-stack-md text-[32px]">precision_manufacturing</span>
-<h3 class="font-h3 text-h3 mb-stack-sm">Stay Functional</h3>
-<p class="text-body-sm text-on-primary-container/80">Maintain your standard of excellence and access your full skill set even when stakes are high.</p>
-</div>
-<div class="p-stack-lg border border-on-primary-container/20">
-<span class="material-symbols-outlined mb-stack-md text-[32px]">schedule</span>
-<h3 class="font-h3 text-h3 mb-stack-sm">Improve Timing</h3>
-<p class="text-body-sm text-on-primary-container/80">Develop the ability to respond with surgical precision to your environment and the people within it.</p>
-</div>
-<div class="p-stack-lg border border-on-primary-container/20">
-<span class="material-symbols-outlined mb-stack-md text-[32px]">battery_saver</span>
-<h3 class="font-h3 text-h3 mb-stack-sm">Reduce Effort</h3>
-<p class="text-body-sm text-on-primary-container/80">Eliminate the internal friction that consumes energy and distracts you from the task at hand.</p>
-</div>
-</div>
+<p class="text-body-sm text-secondary">Apply → conversation → preparation</p>
 </div>
 </section>
 <!-- Methodology: How We Work -->
-<section class="px-3 sm:px-stack-lg md:px-margin py-stack-lg sm:py-stack-xl lg:py-[120px] max-w-[1440px] mx-auto border-b border-outline-variant">
+<section class="px-3 sm:px-stack-lg md:px-margin pt-stack-md sm:pt-stack-lg lg:pt-stack-xl pb-stack-lg sm:pb-stack-xl lg:pb-[120px] max-w-[1440px] mx-auto border-b border-outline-variant">
 <div class="flex flex-col md:flex-row justify-between items-start md:items-end gap-stack-lg mb-stack-xl">
 <div class="max-w-[600px]">
 <span class="font-label-caps text-label-caps text-secondary mb-stack-md block">METHODOLOGY</span>
@@ -271,7 +288,7 @@
 </div>
 </section>
 <!-- What Happens in 3 Days -->
-<section class="px-3 sm:px-stack-lg md:px-margin py-stack-lg sm:py-stack-xl lg:py-[120px] max-w-[1440px] mx-auto border-b border-outline-variant">
+<section class="px-3 sm:px-stack-lg md:px-margin py-stack-lg sm:py-stack-xl lg:py-[120px] max-w-[1440px] mx-auto border-b border-outline-variant" id="workshop-structure">
 <div class="max-w-[920px] mb-stack-xl">
 <span class="font-label-caps text-label-caps text-secondary mb-stack-md block">WORKSHOP STRUCTURE</span>
 <h2 class="font-h1 text-h1 mb-stack-md">What Happens in 3 Days</h2>
