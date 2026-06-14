@@ -18,7 +18,7 @@
         // TODO: replace mailto fallback with final Fluent Forms URLs when available.
         const CONTACT_FORM_URL = "mailto:workshop@fuehrenundfolgen.ch?subject=Workshop%20Inquiry";
         // TODO: replace mailto fallback with final Fluent Forms URLs when available.
-        const APPLICATION_FORM_URL = "mailto:workshop@fuehrenundfolgen.ch?subject=Workshop%20Application";
+        const APPLICATION_FORM_URL = "/application/";
 
         document.addEventListener("DOMContentLoaded", () => {
             const integrationMap = {
@@ -170,7 +170,7 @@
 <a class="font-body-sm tracking-tight text-secondary hover:text-primary transition-colors" href="#facilitators">Leitung</a>
 <a class="font-body-sm tracking-tight text-secondary hover:text-primary transition-colors" href="#details">Details</a>
 <a class="font-body-sm tracking-tight text-secondary hover:text-primary transition-colors" data-link="contact" href="#">Kontakt</a>
-<a class="bg-primary text-on-primary border border-primary px-stack-lg py-stack-sm font-label-caps text-label-caps uppercase tracking-widest hover:bg-accent-warm hover:border-accent-warm transition-all" href="/iframe-test/">Um Teilnahme anfragen</a>
+<a class="bg-primary text-on-primary border border-primary px-stack-lg py-stack-sm font-label-caps text-label-caps uppercase tracking-widest hover:bg-accent-warm hover:border-accent-warm transition-all" data-link="application" href="#">Um Teilnahme anfragen</a>
 </div>
 <button aria-controls="mobile-menu" aria-expanded="false" class="md:hidden text-primary" id="mobile-menu-toggle">
 <span class="material-symbols-outlined">menu</span>
