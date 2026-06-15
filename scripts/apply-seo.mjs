@@ -66,6 +66,7 @@ function sitemapLoc(page) {
 
 function generateSitemap(pageList) {
   const urls = pageList
+    .filter((page) => page.sitemap !== false)
     .map((page) => sitemapLoc(page))
     .sort((a, b) => a.localeCompare(b));
 

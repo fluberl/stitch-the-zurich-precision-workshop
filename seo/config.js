@@ -159,6 +159,8 @@ export const pages = {
     canonicalPath: "/welcome/",
     alternates: { de: "/welcome/" },
     xDefault: "/welcome/",
+    robots: "noindex,follow",
+    sitemap: false,
   },
   "confirm-de": {
     file: "confirm/index.html",
@@ -169,6 +171,8 @@ export const pages = {
     canonicalPath: "/confirm/",
     alternates: { de: "/confirm/" },
     xDefault: "/confirm/",
+    robots: "noindex,follow",
+    sitemap: false,
   },
   "impressum-de": {
     file: "impressum/index.html",

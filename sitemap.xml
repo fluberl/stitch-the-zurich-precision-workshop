@@ -10,9 +10,6 @@
     <loc>https://fuehrenundfolgen.ch/application/</loc>
   </url>
   <url>
-    <loc>https://fuehrenundfolgen.ch/confirm/</loc>
-  </url>
-  <url>
     <loc>https://fuehrenundfolgen.ch/contact/</loc>
   </url>
   <url>
@@ -56,8 +53,5 @@
   </url>
   <url>
     <loc>https://fuehrenundfolgen.ch/raum/</loc>
-  </url>
-  <url>
-    <loc>https://fuehrenundfolgen.ch/welcome/</loc>
   </url>
 </urlset>

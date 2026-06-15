@@ -7,7 +7,7 @@
 import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
-import { pages } from "../seo/config.js";
+import { pages, site } from "../seo/config.js";
 import { absoluteUrl } from "../seo/render.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -54,8 +54,10 @@ for (const [pageId, page] of Object.entries(pages)) {
   );
   expectInHead(
     head,
-    /<meta name="robots" content="index,follow">/,
-    "Missing robots meta",
+    new RegExp(
+      `<meta name="robots" content="${(page.robots ?? site.defaultRobots).replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}">`
+    ),
+    "Missing or incorrect robots meta",
     pageId
   );
   expectInHead(
@@ -191,10 +193,45 @@ for (const file of ["sitemap.xml", "robots.txt"]) {
 if (fs.existsSync(path.join(root, "sitemap.xml"))) {
   const sitemap = read("sitemap.xml");
   const locs = [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1]);
-  if (locs.length !== Object.keys(pages).length) {
-    warnings.push(
-      `Sitemap has ${locs.length} URLs, expected ${Object.keys(pages).length} page entries`
+  const expectedSitemapCount = Object.values(pages).filter(
+    (page) => page.sitemap !== false
+  ).length;
+
+  if (locs.length !== expectedSitemapCount) {
+    errors.push(
+      `Sitemap has ${locs.length} URLs, expected ${expectedSitemapCount}`
     );
+  }
+
+  for (const loc of locs) {
+    if (/\/welcome\/|\/confirm\//.test(loc)) {
+      errors.push(`Sitemap includes workflow URL: ${loc}`);
+    }
+  }
+
+  for (const [pageId, page] of Object.entries(pages)) {
+    if (page.sitemap === false) {
+      const loc = absoluteUrl(page.canonicalPath);
+      if (locs.includes(loc)) {
+        errors.push(`[${pageId}] excluded page still in sitemap: ${loc}`);
+      }
+    }
+  }
+}
+
+for (const [pageId, page] of Object.entries(pages)) {
+  const html = read(page.file);
+  const head = html.match(/<head>[\s\S]*?<\/head>/i)?.[0] ?? html;
+  const robotsMatch = head.match(/<meta name="robots" content="([^"]+)">/);
+  const robots = robotsMatch?.[1] ?? "";
+  const expected = page.robots ?? site.defaultRobots;
+
+  if (robots !== expected) {
+    errors.push(`[${pageId}] robots is "${robots}", expected "${expected}"`);
+  }
+
+  if (robots === "noindex,follow" && page.sitemap !== false) {
+    errors.push(`[${pageId}] noindex page must have sitemap: false`);
   }
 }
 

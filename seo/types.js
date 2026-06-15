@@ -11,6 +11,7 @@
  * @property {string} [ogDescription]
  * @property {string} [ogImage]
  * @property {string} [robots]
+ * @property {boolean} [sitemap]
  * @property {'de'|'en'} [eventSchema]
  */
 
