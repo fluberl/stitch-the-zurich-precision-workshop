@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Teilnahme bestätigt</title>
+<title>Deine Teilnahme ist bestätigt</title>
 <link href="https://fuehrenundfolgen.ch/welcome/" rel="canonical"/>
 <script src="https://cdn.tailwindcss.com"></script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
@@ -26,14 +26,10 @@ tailwind.config = {
       },
       fontFamily: {
         h1: ["Space Grotesk"],
-        h2: ["Space Grotesk"],
-        "body-lg": ["Inter"],
         "body-md": ["Inter"],
       },
       fontSize: {
         h1: ["32px", { lineHeight: "1.2", fontWeight: "500" }],
-        h2: ["18px", { lineHeight: "1.4", fontWeight: "600" }],
-        "body-lg": ["20px", { lineHeight: "1.6", fontWeight: "400" }],
         "body-md": ["16px", { lineHeight: "1.6", fontWeight: "400" }],
         "label-caps": ["12px", { lineHeight: "1.4", fontWeight: "500", letterSpacing: "0.08em" }],
       },
@@ -44,17 +40,21 @@ tailwind.config = {
 <style>body { background-color: #fcf8f8; color: #1c1b1b; }</style>
 </head>
 <body class="font-body-md text-body-md">
-<main class="min-h-screen px-3 sm:px-margin py-stack-lg lg:py-stack-xl max-w-[1440px] mx-auto">
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-gutter lg:gap-stack-xl lg:items-start">
+<main class="min-h-screen px-3 sm:px-margin py-stack-lg lg:py-stack-xl max-w-[1200px] mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-gutter lg:gap-stack-xl lg:items-start">
 <div class="flex items-start justify-center lg:justify-start">
 <img alt="Figure seen from behind, stepping forward with one hand raised and a stick held at the side." class="w-full max-h-[min(70vh,640px)] object-contain object-top" src="../images/Vincentina.png"/>
 </div>
-<div class="max-w-[42ch] space-y-stack-lg">
-<p class="font-body-lg text-body-lg text-primary">Vielen Dank. Deine Teilnahme am Workshop Führen &amp; Folgen wurde bestätigt.</p>
-<p class="text-body-md text-secondary">Du erhältst in Kürze eine Bestätigungs-E-Mail mit den nächsten Schritten.</p>
+<div class="max-w-[42ch] lg:max-w-none space-y-stack-lg lg:pt-[min(10vh,96px)]">
+<h1 class="font-h1 text-h1">Deine Teilnahme ist bestätigt</h1>
+<div class="space-y-stack-md text-secondary">
+<p class="text-body-md text-primary">Vielen Dank.</p>
+<p class="text-body-md">Dein Platz im Workshop Führen &amp; Folgen ist nun definitiv reserviert.</p>
+<p class="text-body-md">Du erhältst in Kürze eine Bestätigungs-E-Mail mit den nächsten Schritten.</p>
 <div class="border-t border-outline-variant pt-stack-lg space-y-stack-md">
 <p class="font-label-caps text-label-caps uppercase tracking-widest text-secondary">Workshop</p>
 <p class="text-body-md text-primary">16.–18. Oktober 2026<br/>Zürich</p>
+</div>
 </div>
 </div>
 </div>
