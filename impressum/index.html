@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Impressum</title>
+<link href="https://fuehrenundfolgen.ch/impressum/" rel="canonical"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: { primary: "#000000", secondary: "#5b5f63", surface: "#fcf8f8" },
+      spacing: { margin: "40px", "stack-lg": "32px", "stack-md": "16px", "stack-sm": "8px" },
+      fontFamily: { h1: ["Space Grotesk"], h2: ["Space Grotesk"], "body-md": ["Inter"], "body-sm": ["Inter"] },
+      fontSize: {
+        h1: ["32px", { lineHeight: "1.2", fontWeight: "500" }],
+        h2: ["18px", { lineHeight: "1.4", fontWeight: "600" }],
+        "body-md": ["16px", { lineHeight: "1.6", fontWeight: "400" }],
+        "body-sm": ["14px", { lineHeight: "1.5", fontWeight: "400" }],
+      },
+    },
+  },
+};
+</script>
+<style>body { background-color: #fcf8f8; color: #1c1b1b; }</style>
+</head>
+<body class="font-body-md text-body-md">
+<main class="px-3 sm:px-margin py-stack-lg max-w-[1440px] mx-auto space-y-stack-lg">
+<p class="text-body-sm"><a class="text-secondary hover:text-primary transition-colors" href="/">← Zurück zur Startseite</a></p>
+<h1 class="font-h1 text-h1">Impressum</h1>
+<section class="space-y-stack-md max-w-[62ch]">
+<h2 class="font-h2 text-h2">Verantwortlich für den Inhalt</h2>
+<p class="text-body-md text-secondary">Führen &amp; Folgen Workshop Zürich<br/>Zürich, Schweiz</p>
+<h2 class="font-h2 text-h2">Kontakt</h2>
+<p class="text-body-md text-secondary">E-Mail: <a class="text-primary hover:opacity-80" href="mailto:workshop@fuehrenundfolgen.ch">workshop@fuehrenundfolgen.ch</a><br/>Kontaktformular: <a class="text-primary hover:opacity-80" href="/contact/">fuehrenundfolgen.ch/contact/</a></p>
+<h2 class="font-h2 text-h2">Haftungsausschluss</h2>
+<p class="text-body-sm text-secondary">Die Inhalte dieser Website werden mit grösster Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Verweise auf externe Websites liegen ausserhalb unseres Verantwortungsbereichs.</p>
+</section>
+</main>
+</body>
+</html>

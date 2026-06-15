@@ -15,24 +15,7 @@
 <meta content="Leading &amp; Following | Workshop Zurich" name="twitter:title"/>
 <meta content="Leading &amp; Following is a Zurich workshop for professionals and performers who want to stay clear, coordinated, and effective under pressure." name="twitter:description"/>
 <script>
-        // TODO: replace mailto fallback with final Fluent Forms URLs when available.
-        const CONTACT_FORM_URL = "mailto:workshop@fuehrenundfolgen.ch?subject=Workshop%20Inquiry";
-        // TODO: replace mailto fallback with final Fluent Forms URLs when available.
-        const APPLICATION_FORM_URL = "/application/";
-
         document.addEventListener("DOMContentLoaded", () => {
-            const integrationMap = {
-                contact: CONTACT_FORM_URL,
-                application: APPLICATION_FORM_URL,
-            };
-
-            document.querySelectorAll("[data-link]").forEach((el) => {
-                const key = el.getAttribute("data-link");
-                if (key && integrationMap[key]) {
-                    el.setAttribute("href", integrationMap[key]);
-                }
-            });
-
             const menuToggle = document.getElementById("mobile-menu-toggle");
             const mobileMenu = document.getElementById("mobile-menu");
             if (menuToggle && mobileMenu) {
@@ -168,9 +151,9 @@
 </div>
 <a class="font-body-sm tracking-tight text-secondary hover:text-primary transition-colors" href="#overview">Overview</a>
 <a class="font-body-sm tracking-tight text-secondary hover:text-primary transition-colors" href="#facilitators">Facilitators</a>
-<a class="font-body-sm tracking-tight text-secondary hover:text-primary transition-colors" href="#details">Details</a>
-<a class="font-body-sm tracking-tight text-secondary hover:text-primary transition-colors" data-link="contact" href="#">Contact</a>
-<a class="bg-primary text-on-primary border border-primary px-stack-lg py-stack-sm font-label-caps text-label-caps uppercase tracking-widest hover:bg-accent-warm hover:border-accent-warm transition-all" data-link="application" href="#">Start Application</a>
+<a class="font-body-sm tracking-tight text-secondary hover:text-primary transition-colors" href="/en/details/">Details</a>
+<a class="font-body-sm tracking-tight text-secondary hover:text-primary transition-colors" href="/en/contact/">Contact</a>
+<a class="bg-primary text-on-primary border border-primary px-stack-lg py-stack-sm font-label-caps text-label-caps uppercase tracking-widest hover:bg-accent-warm hover:border-accent-warm transition-all" href="/en/application/">Start Application</a>
 </div>
 <button aria-controls="mobile-menu" aria-expanded="false" class="md:hidden text-primary" id="mobile-menu-toggle">
 <span class="material-symbols-outlined">menu</span>
@@ -185,9 +168,9 @@
 </div>
 <a class="font-body-sm tracking-tight text-secondary hover:text-primary transition-colors" href="#overview">Overview</a>
 <a class="font-body-sm tracking-tight text-secondary hover:text-primary transition-colors" href="#facilitators">Facilitators</a>
-<a class="font-body-sm tracking-tight text-secondary hover:text-primary transition-colors" href="#details">Details</a>
-<a class="font-body-sm tracking-tight text-secondary hover:text-primary transition-colors" data-link="contact" href="#">Contact</a>
-<a class="bg-primary text-on-primary border border-primary px-stack-lg py-stack-sm font-label-caps text-label-caps uppercase tracking-widest text-center hover:bg-accent-warm hover:border-accent-warm transition-all" data-link="application" href="#">Start Application</a>
+<a class="font-body-sm tracking-tight text-secondary hover:text-primary transition-colors" href="/en/details/">Details</a>
+<a class="font-body-sm tracking-tight text-secondary hover:text-primary transition-colors" href="/en/contact/">Contact</a>
+<a class="bg-primary text-on-primary border border-primary px-stack-lg py-stack-sm font-label-caps text-label-caps uppercase tracking-widest text-center hover:bg-accent-warm hover:border-accent-warm transition-all" href="/en/application/">Start Application</a>
 </div>
 </div>
 </nav>
@@ -206,8 +189,8 @@
 </div>
 <div class="mt-stack-xl lg:mt-stack-lg flex w-full flex-col flex-wrap items-center justify-center gap-stack-md sm:flex-row lg:col-start-1 lg:row-start-2 lg:flex-nowrap lg:items-start lg:justify-start lg:gap-stack-sm">
 <a class="inline-block shrink-0 bg-primary text-on-primary px-stack-xl lg:px-1.5 xl:px-stack-sm py-stack-md font-label-caps text-label-caps uppercase tracking-widest whitespace-normal lg:whitespace-nowrap hover:bg-opacity-90 transition-all" href="#workshop">Is this relevant for me?</a>
-<a class="inline-block shrink-0 border border-outline px-stack-xl lg:px-1.5 xl:px-stack-sm py-stack-md font-label-caps text-label-caps uppercase tracking-widest whitespace-normal lg:whitespace-nowrap hover:bg-accent-warm hover:border-accent-warm hover:text-on-primary transition-all" data-link="application" href="#">Apply for October</a>
-<a class="inline-block shrink-0 border border-outline px-stack-xl lg:px-1.5 xl:px-stack-sm py-stack-md font-label-caps text-label-caps uppercase tracking-widest whitespace-normal lg:whitespace-nowrap hover:bg-surface-container transition-all" data-link="contact" href="#">Ask a question</a>
+<a class="inline-block shrink-0 border border-outline px-stack-xl lg:px-1.5 xl:px-stack-sm py-stack-md font-label-caps text-label-caps uppercase tracking-widest whitespace-normal lg:whitespace-nowrap hover:bg-accent-warm hover:border-accent-warm hover:text-on-primary transition-all" href="/en/application/">Apply for October</a>
+<a class="inline-block shrink-0 border border-outline px-stack-xl lg:px-1.5 xl:px-stack-sm py-stack-md font-label-caps text-label-caps uppercase tracking-widest whitespace-normal lg:whitespace-nowrap hover:bg-surface-container transition-all" href="/en/contact/">Ask a question</a>
 </div>
 </div>
 </section>
@@ -222,9 +205,9 @@
 <p class="text-body-md text-secondary mb-stack-xl">Direct, physical, feedback-rich practice. Not therapy. Not a motivational seminar. Not performance display or charisma training.</p>
 </div>
 <div class="mt-stack-xl flex w-full flex-col flex-wrap items-center justify-center gap-stack-md sm:flex-row">
-<a class="inline-block bg-primary text-on-primary border border-primary px-stack-xl py-stack-md font-label-caps text-label-caps uppercase tracking-widest hover:bg-accent-warm hover:border-accent-warm transition-all" data-link="application" href="#">Start application</a>
+<a class="inline-block bg-primary text-on-primary border border-primary px-stack-xl py-stack-md font-label-caps text-label-caps uppercase tracking-widest hover:bg-accent-warm hover:border-accent-warm transition-all" href="/en/application/">Start application</a>
 <a class="inline-block border border-outline px-stack-xl py-stack-md font-label-caps text-label-caps uppercase tracking-widest hover:bg-surface-container transition-all" href="#workshop-structure">How the three days work</a>
-<a class="inline-block border border-outline px-stack-xl py-stack-md font-label-caps text-label-caps uppercase tracking-widest hover:bg-surface-container transition-all" data-link="contact" href="#">Ask before you apply</a>
+<a class="inline-block border border-outline px-stack-xl py-stack-md font-label-caps text-label-caps uppercase tracking-widest hover:bg-surface-container transition-all" href="/en/contact/">Ask before you apply</a>
 </div>
 </section>
 <!-- Screen 3: Orientation -->
@@ -263,8 +246,8 @@
 </div>
 <p class="text-body-md text-secondary mb-stack-lg">We use a short application and a conversation to confirm fit — for you and for the group.</p>
 <div class="mb-stack-md flex w-full flex-col flex-wrap items-center justify-center gap-stack-md sm:flex-row">
-<a class="inline-block bg-primary text-on-primary border border-primary px-stack-xl py-stack-md font-label-caps text-label-caps uppercase tracking-widest hover:bg-accent-warm hover:border-accent-warm transition-all" data-link="application" href="#">Start application</a>
-<a class="inline-block border border-outline px-stack-xl py-stack-md font-label-caps text-label-caps uppercase tracking-widest hover:bg-surface-container transition-all" data-link="contact" href="#">Request workshop information</a>
+<a class="inline-block bg-primary text-on-primary border border-primary px-stack-xl py-stack-md font-label-caps text-label-caps uppercase tracking-widest hover:bg-accent-warm hover:border-accent-warm transition-all" href="/en/application/">Start application</a>
+<a class="inline-block border border-outline px-stack-xl py-stack-md font-label-caps text-label-caps uppercase tracking-widest hover:bg-surface-container transition-all" href="/en/info/">Request workshop information</a>
 </div>
 </div>
 </section>
@@ -484,12 +467,11 @@
 </div>
 </div>
 <div class="flex flex-col sm:flex-row gap-stack-md mb-stack-md">
-<a class="bg-primary text-on-primary border border-primary px-stack-xl py-stack-md font-label-caps text-label-caps uppercase tracking-widest hover:bg-accent-warm hover:border-accent-warm transition-all text-center" data-link="application" href="#">Start Application</a>
-<a class="border border-outline px-stack-xl py-stack-md font-label-caps text-label-caps uppercase tracking-widest hover:bg-surface-container transition-all text-center" data-link="contact" href="#">Request Workshop Information</a>
-<a class="border border-outline px-stack-xl py-stack-md font-label-caps text-label-caps uppercase tracking-widest hover:bg-surface-container transition-all text-center" data-link="contact" href="#">Contact</a>
+<a class="bg-primary text-on-primary border border-primary px-stack-xl py-stack-md font-label-caps text-label-caps uppercase tracking-widest hover:bg-accent-warm hover:border-accent-warm transition-all text-center" href="/en/application/">Start Application</a>
+<a class="border border-outline px-stack-xl py-stack-md font-label-caps text-label-caps uppercase tracking-widest hover:bg-surface-container transition-all text-center" href="/en/info/">Request Workshop Information</a>
+<a class="border border-outline px-stack-xl py-stack-md font-label-caps text-label-caps uppercase tracking-widest hover:bg-surface-container transition-all text-center" href="/en/contact/">Contact</a>
 </div>
 <p class="text-body-sm text-secondary">The workshop is intentionally small enough to allow precise observation and direct feedback.</p>
-<p class="text-body-sm text-secondary max-w-[62ch] mt-stack-sm">Form integration currently routes via email fallback until final Fluent Forms URLs are connected.</p>
 </section>
 </main>
 <!-- Footer -->
@@ -500,9 +482,9 @@
 <p class="font-body-sm text-on-surface-variant max-w-[52ch]">© 2026 Leading &amp; Following Workshop Zurich.<br/>Three days of precise, practice-based work exploring leading, following, and interaction under pressure.</p>
 </div>
 <div class="flex flex-wrap gap-stack-md sm:gap-stack-lg">
-<a class="font-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Legal Notice</a>
-<a class="font-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Policy</a>
-<a class="font-body-sm text-on-surface-variant hover:text-primary transition-colors" data-link="contact" href="#">Contact</a>
+<a class="font-body-sm text-on-surface-variant hover:text-primary transition-colors" href="/en/legal-notice/">Legal Notice</a>
+<a class="font-body-sm text-on-surface-variant hover:text-primary transition-colors" href="/en/privacy-policy/">Privacy Policy</a>
+<a class="font-body-sm text-on-surface-variant hover:text-primary transition-colors" href="/en/contact/">Contact</a>
 </div>
 </div>
 </footer>

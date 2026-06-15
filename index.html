@@ -15,24 +15,7 @@
 <meta content="Leading &amp; Following | Workshop Zurich" name="twitter:title"/>
 <meta content="Leading &amp; Following is a Zurich workshop for professionals and performers who want to stay clear, coordinated, and effective under pressure." name="twitter:description"/>
 <script>
-        // TODO: replace mailto fallback with final Fluent Forms URLs when available.
-        const CONTACT_FORM_URL = "mailto:workshop@fuehrenundfolgen.ch?subject=Workshop%20Inquiry";
-        // TODO: replace mailto fallback with final Fluent Forms URLs when available.
-        const APPLICATION_FORM_URL = "/application/";
-
         document.addEventListener("DOMContentLoaded", () => {
-            const integrationMap = {
-                contact: CONTACT_FORM_URL,
-                application: APPLICATION_FORM_URL,
-            };
-
-            document.querySelectorAll("[data-link]").forEach((el) => {
-                const key = el.getAttribute("data-link");
-                if (key && integrationMap[key]) {
-                    el.setAttribute("href", integrationMap[key]);
-                }
-            });
-
             const menuToggle = document.getElementById("mobile-menu-toggle");
             const mobileMenu = document.getElementById("mobile-menu");
             if (menuToggle && mobileMenu) {
@@ -168,9 +151,9 @@
 </div>
 <a class="font-body-sm tracking-tight text-secondary hover:text-primary transition-colors" href="#overview">Überblick</a>
 <a class="font-body-sm tracking-tight text-secondary hover:text-primary transition-colors" href="#facilitators">Leitung</a>
-<a class="font-body-sm tracking-tight text-secondary hover:text-primary transition-colors" href="#details">Details</a>
-<a class="font-body-sm tracking-tight text-secondary hover:text-primary transition-colors" data-link="contact" href="#">Kontakt</a>
-<a class="bg-primary text-on-primary border border-primary px-stack-lg py-stack-sm font-label-caps text-label-caps uppercase tracking-widest hover:bg-accent-warm hover:border-accent-warm transition-all" data-link="application" href="#">Um Teilnahme anfragen</a>
+<a class="font-body-sm tracking-tight text-secondary hover:text-primary transition-colors" href="/details/">Details</a>
+<a class="font-body-sm tracking-tight text-secondary hover:text-primary transition-colors" href="/contact/">Kontakt</a>
+<a class="bg-primary text-on-primary border border-primary px-stack-lg py-stack-sm font-label-caps text-label-caps uppercase tracking-widest hover:bg-accent-warm hover:border-accent-warm transition-all" href="/application/">Um Teilnahme anfragen</a>
 </div>
 <button aria-controls="mobile-menu" aria-expanded="false" class="md:hidden text-primary" id="mobile-menu-toggle">
 <span class="material-symbols-outlined">menu</span>
@@ -185,9 +168,9 @@
 </div>
 <a class="font-body-sm tracking-tight text-secondary hover:text-primary transition-colors" href="#overview">Überblick</a>
 <a class="font-body-sm tracking-tight text-secondary hover:text-primary transition-colors" href="#facilitators">Leitung</a>
-<a class="font-body-sm tracking-tight text-secondary hover:text-primary transition-colors" href="#details">Details</a>
-<a class="font-body-sm tracking-tight text-secondary hover:text-primary transition-colors" data-link="contact" href="#">Kontakt</a>
-<a class="bg-primary text-on-primary border border-primary px-stack-lg py-stack-sm font-label-caps text-label-caps uppercase tracking-widest text-center hover:bg-accent-warm hover:border-accent-warm transition-all" data-link="application" href="#">Um Teilnahme anfragen</a>
+<a class="font-body-sm tracking-tight text-secondary hover:text-primary transition-colors" href="/details/">Details</a>
+<a class="font-body-sm tracking-tight text-secondary hover:text-primary transition-colors" href="/contact/">Kontakt</a>
+<a class="bg-primary text-on-primary border border-primary px-stack-lg py-stack-sm font-label-caps text-label-caps uppercase tracking-widest text-center hover:bg-accent-warm hover:border-accent-warm transition-all" href="/application/">Um Teilnahme anfragen</a>
 </div>
 </div>
 </nav>
@@ -206,8 +189,8 @@
 </div>
 <div class="mt-stack-xl lg:mt-stack-lg flex w-full flex-col flex-wrap items-center justify-center gap-stack-md sm:flex-row lg:col-start-1 lg:row-start-2 lg:flex-nowrap lg:items-start lg:justify-start lg:gap-stack-sm">
 <a class="inline-block shrink-0 bg-primary text-on-primary px-stack-xl lg:px-1.5 xl:px-stack-sm py-stack-md font-label-caps text-label-caps uppercase tracking-widest whitespace-normal lg:whitespace-nowrap hover:bg-opacity-90 transition-all" href="#workshop">Betrifft mich das überhaupt?</a>
-<a class="inline-block shrink-0 border border-outline px-stack-xl lg:px-1.5 xl:px-stack-sm py-stack-md font-label-caps text-label-caps uppercase tracking-widest whitespace-normal lg:whitespace-nowrap hover:bg-accent-warm hover:border-accent-warm hover:text-on-primary transition-all" data-link="application" href="#">Um Teilnahme anfragen</a>
-<a class="inline-block shrink-0 border border-outline px-stack-xl lg:px-1.5 xl:px-stack-sm py-stack-md font-label-caps text-label-caps uppercase tracking-widest whitespace-normal lg:whitespace-nowrap hover:bg-surface-container transition-all" data-link="contact" href="#">Frage stellen</a>
+<a class="inline-block shrink-0 border border-outline px-stack-xl lg:px-1.5 xl:px-stack-sm py-stack-md font-label-caps text-label-caps uppercase tracking-widest whitespace-normal lg:whitespace-nowrap hover:bg-accent-warm hover:border-accent-warm hover:text-on-primary transition-all" href="/application/">Um Teilnahme anfragen</a>
+<a class="inline-block shrink-0 border border-outline px-stack-xl lg:px-1.5 xl:px-stack-sm py-stack-md font-label-caps text-label-caps uppercase tracking-widest whitespace-normal lg:whitespace-nowrap hover:bg-surface-container transition-all" href="/contact/">Frage stellen</a>
 </div>
 </div>
 </section>
@@ -222,9 +205,9 @@
 <p class="text-body-md text-secondary mb-stack-xl">Direkte Arbeit mit Bewegung, Interaktion und unmittelbarem Feedback. Keine Therapie. Kein Motivationsseminar. Kein Charisma- oder Selbstdarstellungstraining.</p>
 </div>
 <div class="mt-stack-xl flex w-full flex-col flex-wrap items-center justify-center gap-stack-md sm:flex-row">
-<a class="inline-block bg-primary text-on-primary border border-primary px-stack-xl py-stack-md font-label-caps text-label-caps uppercase tracking-widest hover:bg-accent-warm hover:border-accent-warm transition-all" data-link="application" href="#">Um Teilnahme anfragen</a>
+<a class="inline-block bg-primary text-on-primary border border-primary px-stack-xl py-stack-md font-label-caps text-label-caps uppercase tracking-widest hover:bg-accent-warm hover:border-accent-warm transition-all" href="/application/">Um Teilnahme anfragen</a>
 <a class="inline-block border border-outline px-stack-xl py-stack-md font-label-caps text-label-caps uppercase tracking-widest hover:bg-surface-container transition-all" href="#workshop-structure">Die drei Tage im Überblick</a>
-<a class="inline-block border border-outline px-stack-xl py-stack-md font-label-caps text-label-caps uppercase tracking-widest hover:bg-surface-container transition-all" data-link="contact" href="#">Fragen zur Teilnahme</a>
+<a class="inline-block border border-outline px-stack-xl py-stack-md font-label-caps text-label-caps uppercase tracking-widest hover:bg-surface-container transition-all" href="/contact/">Fragen zur Teilnahme</a>
 </div>
 </section>
 <!-- Screen 3: Orientation -->
@@ -263,8 +246,8 @@
 </div>
 <p class="text-body-md text-secondary mb-stack-lg">Wir nutzen eine kurze Teilnahmeanfrage und ein Gespräch, um gemeinsam zu prüfen, ob der Workshop für Dich und die Gruppe passt.</p>
 <div class="mb-stack-md flex w-full flex-col flex-wrap items-center justify-center gap-stack-md sm:flex-row">
-<a class="inline-block bg-primary text-on-primary border border-primary px-stack-xl py-stack-md font-label-caps text-label-caps uppercase tracking-widest hover:bg-accent-warm hover:border-accent-warm transition-all" data-link="application" href="#">Um Teilnahme anfragen</a>
-<a class="inline-block border border-outline px-stack-xl py-stack-md font-label-caps text-label-caps uppercase tracking-widest hover:bg-surface-container transition-all" data-link="contact" href="#">Workshop-Informationen anfordern</a>
+<a class="inline-block bg-primary text-on-primary border border-primary px-stack-xl py-stack-md font-label-caps text-label-caps uppercase tracking-widest hover:bg-accent-warm hover:border-accent-warm transition-all" href="/application/">Um Teilnahme anfragen</a>
+<a class="inline-block border border-outline px-stack-xl py-stack-md font-label-caps text-label-caps uppercase tracking-widest hover:bg-surface-container transition-all" href="/info/">Workshop-Informationen anfordern</a>
 </div>
 </div>
 </section>
@@ -371,8 +354,8 @@
 <!-- Facilitators -->
 <section class="px-3 sm:px-stack-lg md:px-margin py-stack-lg sm:py-stack-xl lg:py-[120px] max-w-[1440px] mx-auto" id="facilitators">
 <div class="text-center mb-stack-xl">
-<span class="font-label-caps text-label-caps text-secondary mb-stack-md block">EXPERTISE</span>
-<h2 class="font-h1 text-h1">Why We Work Together</h2>
+<span class="font-label-caps text-label-caps text-secondary mb-stack-md block">KOMPETENZ</span>
+<h2 class="font-h1 text-h1">Warum wir zusammenarbeiten</h2>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-stack-md sm:gap-stack-lg md:gap-gutter">
 <div class="bg-surface-container-low p-3 sm:p-stack-lg md:p-stack-xl flex flex-col h-full">
@@ -380,13 +363,13 @@
 <span class="font-label-caps text-[11px] sm:text-label-caps leading-[1.35] md:leading-[1] text-primary/60 mb-stack-md block">TIMING, KOORDINATION UND AUSDRUCK IN DER INTERAKTION</span>
 <p class="text-body-md text-secondary mb-stack-md lg:mb-0 max-w-[58ch]">Vincent richtet seine Aufmerksamkeit auf die Klarheit von Intention und Bewegung sowie deren Bedeutung im zwischenmenschlichen Kontakt.</p></div>
 <img alt="Vincent" class="mt-stack-md lg:mt-0 mb-stack-md aspect-[5/4] sm:aspect-[4/3] md:aspect-auto md:h-[400px] w-full object-cover object-top" src="images/facilitators/Vincent918x760LI.png"/>
-<p class="font-label-caps text-label-caps text-secondary mt-stack-md mb-stack-xs">OPERATIONAL FOCUS</p>
+<p class="font-label-caps text-label-caps text-secondary mt-stack-md mb-stack-xs">SCHWERPUNKTE IN DER PRAXIS</p>
 <ul class="text-body-sm text-secondary space-y-stack-xs mb-stack-md max-w-[58ch]">
 <li>Ein gelebtes Gespür für Führen und Folgen in Beziehung mit anderen entwickeln.</li>
 <li>Spontan und angemessen auf wechselnde Situationen reagieren.</li>
 <li>Innere Organisation und äussere Interaktion aufrechterhalten, wenn sich die Umstände verändern.</li>
 </ul>
-<p class="font-label-caps text-label-caps text-secondary mt-stack-md mb-stack-xs">IN-SESSION RESPONSIBILITY</p>
+<p class="font-label-caps text-label-caps text-secondary mt-stack-md mb-stack-xs">VERANTWORTUNG WÄHREND DER ARBEIT</p>
 <p class="text-body-sm text-secondary mb-stack-md max-w-[58ch]">Vincent beobachtet die Qualität der Interaktion, während sie sich entfaltet, und nutzt aufschlussreiche partnerbasierte Übungen, um Bewusstheit, Koordination und Wahlmöglichkeiten in Echtzeit zu verfeinern.</p>
 <p class="font-label-caps text-label-caps text-secondary mt-stack-md mb-stack-xs">HINTERGRUND &amp; SCHWERPUNKTE</p>
 <p class="text-body-sm text-secondary max-w-[58ch]">Mit über 25 Jahren Orchestererfahrung, mehr als 30 Jahren Tätigkeit als Feldenkrais-Practitioner und 35 Jahren Lehrtätigkeit an der Hochschule für Musik Detmold bringt Vincent umfassende Expertise in den Bereichen Auftrittspraxis und Pädagogik mit. Er verfügt über langjährige Erfahrung mit unterschiedlichsten Gruppen – von Orchestern und Chören bis hin zu Führungskräften in Verwaltung und Organisationen.</p></div>
@@ -396,63 +379,63 @@
 <span class="font-label-caps text-[11px] sm:text-label-caps leading-[1.35] md:leading-[1] text-primary/60 mb-stack-md block">SELBSTREGULATION UND ZUGANG UNTER DRUCK</span>
 <p class="text-body-md text-secondary mb-stack-md lg:mb-0 max-w-[58ch]">Ulf achtet auf das, was in jemandem geschieht, wenn die Anforderungen steigen – nicht ob die Person weiss, was zu tun ist, sondern ob sie noch Zugang dazu hat.</p></div>
 <img alt="Ulf" class="mt-stack-md lg:mt-0 mb-stack-md aspect-[5/4] sm:aspect-[4/3] md:aspect-auto md:h-[400px] w-full object-cover object-top" src="images/facilitators/Ulf918x760LI.png"/>
-<p class="font-label-caps text-label-caps text-secondary mt-stack-md mb-stack-xs">OPERATIONAL FOCUS</p>
+<p class="font-label-caps text-label-caps text-secondary mt-stack-md mb-stack-xs">SCHWERPUNKTE IN DER PRAXIS</p>
 <ul class="text-body-sm text-secondary space-y-stack-xs mb-stack-md max-w-[58ch]">
 <li>Regulationsbelastung in Atmung, Tonfall und muskulärer Organisation.</li>
 <li>Aufwandökonomie bei Kontakt, Bewegung und Entscheidungsmomenten.</li>
 <li>Übertragung von Workshop-Übungen in professionelle Leistungssituationen.</li>
 </ul>
-<p class="font-label-caps text-label-caps text-secondary mt-stack-md mb-stack-xs">IN-SESSION RESPONSIBILITY</p>
+<p class="font-label-caps text-label-caps text-secondary mt-stack-md mb-stack-xs">VERANTWORTUNG WÄHREND DER ARBEIT</p>
 <p class="text-body-sm text-secondary mb-stack-md max-w-[58ch]">Ulf beobachtet, wo der Zugang unter Stress nachlässt, gibt unmittelbares Feedback und leitet präzise Anpassungen für den nächsten Interaktionszyklus an.</p>
 <p class="font-label-caps text-label-caps text-secondary mt-stack-md mb-stack-xs">HINTERGRUND &amp; SCHWERPUNKTE</p>
 <p class="text-body-sm text-secondary max-w-[58ch]">Ulf war zehn Jahre Orchestermusiker. Als Alexander-Technik-Lehrer und Personal Health Coach arbeitete er mit Orchestern wie dem NDR Hamburg, dem RSO Wien und dem Orquestra Sinfônica de Porto Alegre (Brasilien). Zehn Jahre unterrichtete er an der Musikhochschule Stuttgart; zwanzig Jahre arbeitete er in der Zürcher Wirbelsäulen- und Traumapraxis von Dr. Holdener. Er verfügt über einen Masterabschluss in Public Health (MPH).</p></div>
 </div>
 </div>
 <div class="mt-stack-lg md:mt-stack-xl border border-outline-variant p-3 sm:p-stack-lg md:p-stack-xl">
-<p class="font-label-caps text-label-caps text-secondary mb-stack-md">CO-FACILITATION LOGIC</p>
-<p class="text-body-md text-secondary mb-stack-lg">This workshop runs as a dual observation system: internal regulation and external interaction are monitored together in the same live process.</p>
+<p class="font-label-caps text-label-caps text-secondary mb-stack-md">LOGIK DER CO-LEITUNG</p>
+<p class="text-body-md text-secondary mb-stack-lg">Dieser Workshop funktioniert als duales Beobachtungssystem: innere Regulation und äussere Interaktion werden im selben live Prozess gemeinsam verfolgt.</p>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-stack-md md:gap-gutter mb-stack-lg">
-<p class="text-body-sm text-secondary">When Vincent leads an interaction task, Ulf tracks regulation load and access stability.</p>
-<p class="text-body-sm text-secondary">When Ulf leads regulation work, Vincent tracks timing, coordination, and communicative precision.</p>
+<p class="text-body-sm text-secondary">Wenn Vincent eine Interaktionsaufgabe leitet, verfolgt Ulf Regulationsbelastung und Zugangsstabilität.</p>
+<p class="text-body-sm text-secondary">Wenn Ulf Regulationsarbeit leitet, verfolgt Vincent Timing, Koordination und kommunikative Präzision.</p>
 </div>
-<p class="text-body-sm text-secondary">Participants receive integrated feedback across regulation, coordination, and interaction quality.</p>
+<p class="text-body-sm text-secondary">Teilnehmende erhalten integriertes Feedback zu Regulation, Koordination und Interaktionsqualität.</p>
 </div>
 </section>
 <!-- Practical Details & Pricing -->
 <section class="px-margin pt-stack-xl lg:pt-stack-xl pb-stack-xl lg:pb-[120px] max-w-[1440px] mx-auto border-t border-outline-variant grid grid-cols-1 lg:grid-cols-12 gap-gutter" id="details">
 <div class="lg:col-span-6">
-<span class="font-label-caps text-label-caps text-secondary mb-stack-md block">LOGISTICS</span>
-<h2 class="font-h1 text-h1 mb-stack-lg">Practical Details</h2>
+<span class="font-label-caps text-label-caps text-secondary mb-stack-md block">LOGISTIK</span>
+<h2 class="font-h1 text-h1 mb-stack-lg">Praktische Details</h2>
 <div class="space-y-0">
 <div class="flex justify-between border-b border-outline-variant py-stack-lg">
-<span class="font-label-caps text-label-caps text-secondary">DATE</span>
-<span class="font-body-md font-medium text-primary">16–18 Oct 2026</span>
+<span class="font-label-caps text-label-caps text-secondary">DATUM</span>
+<span class="font-body-md font-medium text-primary">16.–18. Oktober 2026</span>
 </div>
 <div class="flex justify-between border-b border-outline-variant py-stack-lg">
-<span class="font-label-caps text-label-caps text-secondary">LOCATION</span>
-<span class="font-body-md font-medium text-primary">Zurich, Switzerland</span>
+<span class="font-label-caps text-label-caps text-secondary">ORT</span>
+<span class="font-body-md font-medium text-primary">Zürich, Schweiz</span>
 </div>
 <div class="flex justify-between border-b border-outline-variant py-stack-lg">
-<span class="font-label-caps text-label-caps text-secondary">FEE</span>
+<span class="font-label-caps text-label-caps text-secondary">GEBÜHR</span>
 <span class="font-body-md font-medium text-primary">CHF 650</span>
 </div>
 <div class="flex justify-between border-b border-outline-variant py-stack-lg">
-<span class="font-label-caps text-label-caps text-secondary">GROUP SIZE</span>
-<span class="font-body-md font-medium text-primary">Limited to 13 participants</span>
+<span class="font-label-caps text-label-caps text-secondary">GRUPPENGRÖSSE</span>
+<span class="font-body-md font-medium text-primary">Begrenzt auf 13 Teilnehmende</span>
 </div>
 </div>
 </div>
 <div class="lg:col-span-6 lg:pl-stack-xl mt-stack-xl lg:mt-0">
-<span class="font-label-caps text-label-caps text-secondary mb-stack-md block">FAQ</span>
-<h2 class="font-h1 text-h1 mb-stack-lg">Common Questions</h2>
+<span class="font-label-caps text-label-caps text-secondary mb-stack-md block">HÄUFIGE FRAGEN</span>
+<h2 class="font-h1 text-h1 mb-stack-lg">Häufige Fragen</h2>
 <div class="space-y-stack-xl">
 <div>
-<h4 class="font-h3 text-h3 mb-stack-xs">Is this a movement workshop?</h4>
-<p class="text-body-md text-secondary">Yes. Movement is one of the ways we explore what happens in ourselves and between people. The focus is not movement as an aesthetic end in itself, but on what becomes visible through movement, interaction, and feedback.</p>
+<h4 class="font-h3 text-h3 mb-stack-xs">Ist das ein Bewegungsworkshop?</h4>
+<p class="text-body-md text-secondary">Ja. Bewegung ist einer der Wege, um zu erforschen, was in uns selbst und zwischen Menschen geschieht. Der Fokus liegt nicht auf Bewegung als ästhetischem Selbstzweck, sondern darauf, was durch Bewegung, Interaktion und Feedback sichtbar wird.</p>
 </div>
 <div>
-<h4 class="font-h3 text-h3 mb-stack-xs">Do I need a specific background?</h4>
-<p class="text-body-md text-secondary">The workshop is open to anyone in a leading or performing role who needs to maintain precision under pressure. Specific athletic or artistic training is not required.</p>
+<h4 class="font-h3 text-h3 mb-stack-xs">Brauche ich einen bestimmten Hintergrund?</h4>
+<p class="text-body-md text-secondary">Der Workshop richtet sich an Menschen in führenden oder leistungsbezogenen Rollen, die unter Druck Präzision bewahren müssen. Spezifische sportliche oder künstlerische Ausbildung ist nicht erforderlich.</p>
 </div>
 </div>
 </div>
@@ -460,36 +443,35 @@
 <!-- Final CTA -->
 <section class="px-3 sm:px-stack-lg md:px-margin py-stack-lg sm:py-stack-xl lg:py-[120px] max-w-[1440px] mx-auto border-t border-outline-variant" id="apply">
 <div class="max-w-[920px] mb-stack-md">
-<span class="font-label-caps text-label-caps text-secondary mb-stack-md block">APPLICATION</span>
-<h2 class="font-h1 text-h1 mb-stack-md">Apply for the Workshop</h2>
+<span class="font-label-caps text-label-caps text-secondary mb-stack-md block">TEILNAHMEANFRAGE</span>
+<h2 class="font-h1 text-h1 mb-stack-md">Teilnahme am Workshop</h2>
 </div>
-<p class="text-body-md text-secondary mb-stack-xl">Participation is intentional. This workshop works best for people who are willing to observe carefully, work precisely, and stay engaged in live interaction. The application process is used for alignment, not exclusivity theater.</p>
+<p class="text-body-md text-secondary mb-stack-xl">Die Teilnahme ist bewusst gewählt. Dieser Workshop eignet sich für Menschen, die genau beobachten, präzise arbeiten und in live Interaktion engagiert bleiben wollen. Die Teilnahmeanfrage dient der Abstimmung – nicht der Exklusivität um ihrer selbst willen.</p>
 <div class="border border-outline-variant mb-stack-lg md:mb-stack-xl" id="apply-process">
 <div class="grid grid-cols-1 md:grid-cols-3">
 <div class="p-3 sm:p-stack-lg md:p-stack-xl border-b md:border-b-0 md:border-r border-outline-variant">
-<p class="font-label-caps text-label-caps text-secondary mb-stack-xs">STEP 1</p>
-<h3 class="font-h3 text-h3 mb-stack-xs">Application</h3>
-<p class="text-body-sm text-secondary max-w-[58ch]">Short written application or expression of interest.</p>
+<p class="font-label-caps text-label-caps text-secondary mb-stack-xs">SCHRITT 1</p>
+<h3 class="font-h3 text-h3 mb-stack-xs">Teilnahmeanfrage</h3>
+<p class="text-body-sm text-secondary max-w-[58ch]">Kurze schriftliche Teilnahmeanfrage oder Interessensbekundung.</p>
 </div>
 <div class="p-3 sm:p-stack-lg md:p-stack-xl border-b md:border-b-0 md:border-r border-outline-variant">
-<p class="font-label-caps text-label-caps text-secondary mb-stack-xs">STEP 2</p>
-<h3 class="font-h3 text-h3 mb-stack-xs">Conversation / Confirmation</h3>
-<p class="text-body-sm text-secondary max-w-[58ch]">Clarification of fit, expectations, logistics, and remaining questions.</p>
+<p class="font-label-caps text-label-caps text-secondary mb-stack-xs">SCHRITT 2</p>
+<h3 class="font-h3 text-h3 mb-stack-xs">Gespräch / Bestätigung</h3>
+<p class="text-body-sm text-secondary max-w-[58ch]">Klärung von Passung, Erwartungen, Logistik und offenen Fragen.</p>
 </div>
 <div class="p-3 sm:p-stack-lg md:p-stack-xl">
-<p class="font-label-caps text-label-caps text-secondary mb-stack-xs">STEP 3</p>
-<h3 class="font-h3 text-h3 mb-stack-xs">Preparation</h3>
-<p class="text-body-sm text-secondary max-w-[58ch]">Participants receive practical preparation details before the workshop.</p>
+<p class="font-label-caps text-label-caps text-secondary mb-stack-xs">SCHRITT 3</p>
+<h3 class="font-h3 text-h3 mb-stack-xs">Vorbereitung</h3>
+<p class="text-body-sm text-secondary max-w-[58ch]">Teilnehmende erhalten praktische Vorbereitungsinformationen vor dem Workshop.</p>
 </div>
 </div>
 </div>
 <div class="flex flex-col sm:flex-row gap-stack-md mb-stack-md">
-<a class="bg-primary text-on-primary border border-primary px-stack-xl py-stack-md font-label-caps text-label-caps uppercase tracking-widest hover:bg-accent-warm hover:border-accent-warm transition-all text-center" data-link="application" href="#">Um Teilnahme anfragen</a>
-<a class="border border-outline px-stack-xl py-stack-md font-label-caps text-label-caps uppercase tracking-widest hover:bg-surface-container transition-all text-center" data-link="contact" href="#">Request Workshop Information</a>
-<a class="border border-outline px-stack-xl py-stack-md font-label-caps text-label-caps uppercase tracking-widest hover:bg-surface-container transition-all text-center" data-link="contact" href="#">Kontakt</a>
+<a class="bg-primary text-on-primary border border-primary px-stack-xl py-stack-md font-label-caps text-label-caps uppercase tracking-widest hover:bg-accent-warm hover:border-accent-warm transition-all text-center" href="/application/">Um Teilnahme anfragen</a>
+<a class="border border-outline px-stack-xl py-stack-md font-label-caps text-label-caps uppercase tracking-widest hover:bg-surface-container transition-all text-center" href="/info/">Workshop-Informationen anfordern</a>
+<a class="border border-outline px-stack-xl py-stack-md font-label-caps text-label-caps uppercase tracking-widest hover:bg-surface-container transition-all text-center" href="/contact/">Kontakt</a>
 </div>
-<p class="text-body-sm text-secondary">The workshop is intentionally small enough to allow precise observation and direct feedback.</p>
-<p class="text-body-sm text-secondary max-w-[62ch] mt-stack-sm">Form integration currently routes via email fallback until final Fluent Forms URLs are connected.</p>
+<p class="text-body-sm text-secondary">Der Workshop bleibt bewusst klein genug für präzise Beobachtung und unmittelbares Feedback.</p>
 </section>
 </main>
 <!-- Footer -->
@@ -500,9 +482,9 @@
 <p class="font-body-sm text-on-surface-variant max-w-[52ch]">© 2026 Führen &amp; Folgen Workshop Zürich.<br/>Drei Tage präzise, praxisbasierte Arbeit über Führen, Folgen und Interaktion unter Druck.</p>
 </div>
 <div class="flex flex-wrap gap-stack-md sm:gap-stack-lg">
-<a class="font-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Impressum</a>
-<a class="font-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Datenschutz</a>
-<a class="font-body-sm text-on-surface-variant hover:text-primary transition-colors" data-link="contact" href="#">Kontakt</a>
+<a class="font-body-sm text-on-surface-variant hover:text-primary transition-colors" href="/impressum/">Impressum</a>
+<a class="font-body-sm text-on-surface-variant hover:text-primary transition-colors" href="/datenschutz/">Datenschutz</a>
+<a class="font-body-sm text-on-surface-variant hover:text-primary transition-colors" href="/contact/">Kontakt</a>
 </div>
 </div>
 </footer>
