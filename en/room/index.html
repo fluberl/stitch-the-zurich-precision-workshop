@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Workshop Room | Leading &amp; Following</title>
+<meta content="The room for the Leading &amp; Following workshop in Zurich: open floor, natural light, and a calm setting for movement, partner work, and precise feedback." name="description"/>
+<link href="https://fuehrenundfolgen.ch/en/room/" rel="canonical"/>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const menuToggle = document.getElementById("mobile-menu-toggle");
+  const mobileMenu = document.getElementById("mobile-menu");
+  if (menuToggle && mobileMenu) {
+    menuToggle.addEventListener("click", () => {
+      const isHidden = mobileMenu.classList.contains("hidden");
+      mobileMenu.classList.toggle("hidden", !isHidden);
+      menuToggle.setAttribute("aria-expanded", String(isHidden));
+    });
+  }
+});
+</script>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        primary: "#000000",
+        secondary: "#5b5f63",
+        surface: "#fcf8f8",
+        "surface-container-highest": "#e5e2e1",
+        "on-primary": "#ffffff",
+        "on-surface-variant": "#45474a",
+        "outline-variant": "#c5c6ca",
+        "accent-warm": "#aca67b",
+      },
+      spacing: {
+        margin: "40px",
+        gutter: "24px",
+        "stack-lg": "32px",
+        "stack-md": "16px",
+        "stack-xl": "64px",
+      },
+      fontFamily: {
+        h1: ["Space Grotesk"],
+        h2: ["Space Grotesk"],
+        "body-md": ["Inter"],
+        "body-sm": ["Inter"],
+        "label-caps": ["Space Grotesk"],
+      },
+      fontSize: {
+        h1: ["32px", { lineHeight: "1.2", fontWeight: "500" }],
+        h2: ["24px", { lineHeight: "1.3", fontWeight: "500" }],
+        "body-md": ["16px", { lineHeight: "1.6", fontWeight: "400" }],
+        "body-sm": ["14px", { lineHeight: "1.5", fontWeight: "400" }],
+        "label-caps": ["12px", { lineHeight: "1", letterSpacing: "0.1em", fontWeight: "600" }],
+      },
+    },
+  },
+};
+</script>
+<style>
+.material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+body { background-color: #fcf8f8; color: #1c1b1b; }
+</style>
+</head>
+<body class="font-body-md text-body-md">
+<nav class="bg-surface/90 backdrop-blur-md border-b border-outline-variant fixed top-0 z-50 w-full">
+<div class="flex justify-between items-center px-3 sm:px-stack-lg md:px-margin py-stack-md w-full max-w-[1440px] mx-auto">
+<a class="block leading-none text-primary hover:opacity-90 transition-opacity" href="/en/">
+<span class="font-h2 text-h2 font-medium tracking-tight block">Führen &amp; Folgen</span>
+<span class="mt-1 block font-body-md text-[13px] font-normal leading-snug tracking-[0.06em] text-secondary">Leading &amp; Following</span>
+</a>
+<div class="hidden md:flex items-center gap-stack-lg">
+<div class="flex items-center gap-2 font-body-sm shrink-0" aria-label="Language">
+<a class="text-secondary hover:text-primary transition-colors" href="/raum/">DE</a>
+<span class="text-secondary" aria-hidden="true">|</span>
+<a class="text-primary font-medium" href="/en/room/" lang="en" hreflang="en">EN</a>
+</div>
+<a class="font-body-sm tracking-tight text-secondary hover:text-primary transition-colors" href="/en/#overview">Overview</a>
+<a class="font-body-sm tracking-tight text-secondary hover:text-primary transition-colors" href="/en/#facilitators">Facilitators</a>
+<a class="font-body-sm tracking-tight text-primary font-medium" href="/en/room/" aria-current="page">Room</a>
+<a class="font-body-sm tracking-tight text-secondary hover:text-primary transition-colors" href="/en/details/">Details</a>
+<a class="font-body-sm tracking-tight text-secondary hover:text-primary transition-colors" href="/en/contact/" target="_blank" rel="noopener noreferrer">Contact</a>
+<a class="bg-primary text-on-primary border border-primary px-stack-lg py-stack-sm font-label-caps text-label-caps uppercase tracking-widest hover:bg-accent-warm hover:border-accent-warm transition-all" href="/en/application/" target="_blank" rel="noopener noreferrer">Start Application</a>
+</div>
+<button aria-controls="mobile-menu" aria-expanded="false" class="md:hidden text-primary" id="mobile-menu-toggle">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+<div class="hidden md:hidden border-t border-outline-variant bg-surface" id="mobile-menu">
+<div class="px-3 py-stack-md flex flex-col gap-stack-md">
+<div class="flex items-center gap-2 font-body-sm pb-stack-sm border-b border-outline-variant w-full" aria-label="Language">
+<a class="text-secondary hover:text-primary transition-colors" href="/raum/">DE</a>
+<span class="text-secondary" aria-hidden="true">|</span>
+<a class="text-primary font-medium" href="/en/room/" lang="en" hreflang="en">EN</a>
+</div>
+<a class="font-body-sm tracking-tight text-secondary hover:text-primary transition-colors" href="/en/#overview">Overview</a>
+<a class="font-body-sm tracking-tight text-secondary hover:text-primary transition-colors" href="/en/#facilitators">Facilitators</a>
+<a class="font-body-sm tracking-tight text-primary font-medium" href="/en/room/" aria-current="page">Room</a>
+<a class="font-body-sm tracking-tight text-secondary hover:text-primary transition-colors" href="/en/details/">Details</a>
+<a class="font-body-sm tracking-tight text-secondary hover:text-primary transition-colors" href="/en/contact/" target="_blank" rel="noopener noreferrer">Contact</a>
+<a class="bg-primary text-on-primary border border-primary px-stack-lg py-stack-sm font-label-caps text-label-caps uppercase tracking-widest text-center hover:bg-accent-warm hover:border-accent-warm transition-all" href="/en/application/" target="_blank" rel="noopener noreferrer">Start Application</a>
+</div>
+</div>
+</nav>
+<main class="pt-[80px]">
+<section class="px-3 sm:px-margin py-stack-lg lg:py-stack-xl max-w-[1200px] mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-gutter lg:gap-stack-xl lg:items-start">
+<div class="order-2 lg:order-1 flex items-start justify-center lg:justify-start">
+<img alt="Workshop room in Zurich with open wooden floor, bright light, and open space for movement and partner work." class="w-full object-cover object-center" src="../../images/workshopraum.png"/>
+</div>
+<div class="order-1 lg:order-2 max-w-[42ch] lg:max-w-none space-y-stack-lg lg:pt-[min(6vh,64px)]">
+<h1 class="font-h1 text-h1">The Workshop Room</h1>
+<div class="space-y-stack-md text-secondary">
+<p class="text-body-md text-primary">The work takes place in a small group in the Zurich area.</p>
+<p class="text-body-md">The room offers enough space for movement, partner work, and shared tasks. It is simple, bright, and quiet enough for attention to remain with what is happening in the moment: orientation, coordination, and contact.</p>
+<p class="text-body-md">The exact location will be shared with confirmed participants in good time.</p>
+<div class="space-y-stack-md pt-stack-md">
+<h2 class="font-h2 text-h2 text-primary">Why this room?</h2>
+<ul class="text-body-sm text-secondary space-y-stack-sm list-disc pl-stack-lg">
+<li>enough space for practical work in movement</li>
+<li>calm atmosphere without unnecessary distraction</li>
+<li>suitable for individual work, partner work, and group tasks</li>
+<li>easy to reach in the Zurich area</li>
+</ul>
+</div>
+<div class="border-t border-outline-variant pt-stack-lg space-y-stack-md">
+<p class="font-label-caps text-label-caps uppercase tracking-widest text-secondary">Workshop</p>
+<p class="text-body-md text-primary">16–18 October 2026<br/>Zurich<br/>Small group · max. 13 participants</p>
+</div>
+<div class="pt-stack-lg space-y-stack-md">
+<a class="inline-block bg-primary text-on-primary border border-primary px-stack-xl py-stack-md font-label-caps text-label-caps uppercase tracking-widest hover:bg-accent-warm hover:border-accent-warm transition-all text-center" href="/en/application/" target="_blank" rel="noopener noreferrer">Apply to participate</a>
+<p class="text-body-sm text-secondary"><a class="text-primary hover:opacity-80 underline-offset-2 hover:underline" href="/en/contact/" target="_blank" rel="noopener noreferrer">Questions about the room or participation? Contact us</a></p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-surface-container-highest border-t border-outline-variant">
+<div class="flex flex-col md:flex-row justify-between items-start md:items-center px-3 sm:px-stack-lg md:px-margin py-stack-lg sm:py-stack-xl gap-stack-lg md:gap-stack-xl max-w-[1440px] mx-auto">
+<div class="flex flex-col gap-2">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-primary">LEADING &amp; FOLLOWING – ZURICH WORKSHOP</span>
+<p class="font-body-sm text-on-surface-variant max-w-[52ch]">© 2026 Leading &amp; Following Workshop Zurich.<br/>Three days of precise, practice-based work exploring leading, following, and interaction under pressure.</p>
+</div>
+<div class="flex flex-wrap gap-stack-md sm:gap-stack-lg">
+<a class="font-body-sm text-on-surface-variant hover:text-primary transition-colors" href="/en/legal-notice/">Legal Notice</a>
+<a class="font-body-sm text-on-surface-variant hover:text-primary transition-colors" href="/en/privacy-policy/">Privacy Policy</a>
+<a class="font-body-sm text-on-surface-variant hover:text-primary transition-colors" href="/en/terms/">Terms &amp; Conditions</a>
+<a class="font-body-sm text-on-surface-variant hover:text-primary transition-colors" href="/en/contact/" target="_blank" rel="noopener noreferrer">Contact</a>
+</div>
+</div>
+</footer>
+</body>
+</html>
