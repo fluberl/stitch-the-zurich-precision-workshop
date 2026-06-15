@@ -41,21 +41,24 @@ tailwind.config = {
 <style>
 body { background-color: #fcf8f8; color: #1c1b1b; }
 .tc-v2-embeddable-trigger-el.button { background-color: #aca67b !important; }
+@media (min-width: 1024px) {
+  .confirm-cta-wrap [data-align="center"] { text-align: left; }
+}
 </style>
 </head>
 <body class="font-body-md text-body-md">
-<main class="min-h-screen px-3 sm:px-margin py-stack-lg lg:py-stack-xl flex flex-col items-center justify-center lg:justify-start lg:pt-[min(16vh,140px)]">
-<div class="w-full max-w-[42ch] lg:max-w-[52ch] mx-auto text-center">
-<h1 class="font-h1 text-h1 lg:text-[36px] mb-stack-lg">Teilnahme bestätigen</h1>
-<div class="space-y-stack-md text-secondary text-left">
-<p class="text-body-md text-primary">Deine Bewerbung wurde geprüft und angenommen.</p>
-<p class="text-body-md">Mit der Zahlung wird dein Platz im Workshop Führen &amp; Folgen definitiv reserviert.</p>
-<div class="border-t border-outline-variant pt-stack-lg space-y-stack-md">
+<main class="min-h-screen px-3 sm:px-margin py-stack-lg flex flex-col items-center justify-center lg:items-start lg:justify-start lg:pt-20 lg:pb-stack-xl">
+<div class="w-full max-w-[42ch] lg:max-w-[650px] mx-auto lg:mx-0 text-center lg:text-left">
+<h1 class="font-h1 text-h1 lg:text-[40px] lg:leading-[1.15] mb-stack-lg lg:mb-10">Teilnahme bestätigen</h1>
+<div class="space-y-stack-md lg:space-y-6 text-secondary text-left">
+<p class="text-body-md lg:text-[18px] lg:leading-[1.65] text-primary">Deine Bewerbung wurde geprüft und angenommen.</p>
+<p class="text-body-md lg:text-[18px] lg:leading-[1.65]">Mit der Zahlung wird dein Platz im Workshop Führen &amp; Folgen definitiv reserviert.</p>
+<div class="border-t border-outline-variant pt-stack-lg lg:pt-8 space-y-stack-md lg:space-y-4">
 <p class="font-label-caps text-label-caps uppercase tracking-widest text-secondary">Workshop</p>
-<p class="text-body-md text-primary">16.–18. Oktober 2026<br/>Zürich</p>
+<p class="text-body-md lg:text-[18px] lg:leading-[1.65] text-primary">16.–18. Oktober 2026<br/>Zürich</p>
 </div>
 </div>
-<div class="mt-stack-xl lg:mt-[72px]">
+<div class="confirm-cta-wrap mt-stack-xl">
 <div class="builder-v2-widget tc-v2-widget-embeddable_button tc-v2-embeddable-trigger" data-widget-layout="embeddable_button" data-thrivecart-account="gomobileswiss" data-thrivecart-tpl="v2" data-thrivecart-product="41" data-thrivecart-modal="on" data-thrivecart-modal-opts="{&quot;style_modal_width&quot;:&quot;40&quot;,&quot;style_content_border_radius&quot;:&quot;0.5&quot;,&quot;attr_modal_background&quot;:&quot;on&quot;,&quot;style_modal_background_color&quot;:&quot;#000000&quot;,&quot;style_modal_background_opacity&quot;:&quot;40&quot;,&quot;attr_modal_blur&quot;:&quot;off&quot;,&quot;attr_content_shadow&quot;:&quot;off&quot;}"><div data-size="auto" data-style="rounded" data-align="center" data-block="embeddable_button" class="builder-v2-block builder-v2-block-embeddable_button"><button class="tc-v2-embeddable-trigger-el button" style="background-color: #aca67b; border-radius: 0.25em"><span class="builder-v2-block builder-v2-block-plaintext" data-block="plaintext" style="color: #ffffff" data-block-opts="{&quot;text_editor_toolbar&quot;:&quot;plain&quot;}">Platz sichern</span></button></div></div><script async src="//tinder.thrivecart.com/embed/v2/thrivecart.js" id=""></script>
 </div>
 </div>
