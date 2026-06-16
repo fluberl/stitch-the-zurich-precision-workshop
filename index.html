@@ -148,10 +148,18 @@
             background-color: #fcf8f8;
             color: #1c1b1b;
         }
-        @media (max-width: 767px) {
+        @media (max-width: 767px) and (min-width: 640px) {
             #overview > h1 {
                 font-size: 44px !important;
                 line-height: 1.1 !important;
+                hyphens: none;
+                -webkit-hyphens: none;
+            }
+        }
+        @media (max-width: 639px) {
+            #overview > h1 {
+                font-size: 32px !important;
+                line-height: 1.15 !important;
                 hyphens: none;
                 -webkit-hyphens: none;
             }
