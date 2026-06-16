@@ -7,7 +7,7 @@
 import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
-import { pages, site } from "../seo/config.js";
+import { pages, site, favicon } from "../seo/config.js";
 import { absoluteUrl } from "../seo/render.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
@@ -137,6 +137,22 @@ for (const [pageId, page] of Object.entries(pages)) {
     );
   }
 
+  if (!head.includes("<!-- ff-favicon:start -->")) {
+    errors.push(`[${pageId}] Missing ff-favicon marker block — run apply-seo.mjs`);
+  }
+  expectInHead(
+    head,
+    new RegExp(`<link rel="icon" href="${favicon.ico.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}" sizes="any">`),
+    "Missing favicon.ico link",
+    pageId
+  );
+  expectInHead(
+    head,
+    new RegExp(`<link rel="apple-touch-icon" href="${favicon.apple.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}">`),
+    "Missing apple-touch-icon link",
+    pageId
+  );
+
   const titleMatch = head.match(/<title>([^<]*)<\/title>/);
   if (titleMatch) {
     const title = titleMatch[1];
@@ -184,7 +200,7 @@ for (const [pageId, page] of Object.entries(pages)) {
   }
 }
 
-for (const file of ["sitemap.xml", "robots.txt"]) {
+for (const file of ["sitemap.xml", "robots.txt", "favicon.ico", "icon.png", "apple-touch-icon.png", "site.webmanifest", "images/ff-favicon.png"]) {
   if (!fs.existsSync(path.join(root, file))) {
     errors.push(`Missing ${file}`);
   }

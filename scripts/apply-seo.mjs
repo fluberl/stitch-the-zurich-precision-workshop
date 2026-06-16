@@ -8,13 +8,15 @@ import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
 import { pages, site } from "../seo/config.js";
-import { absoluteUrl, renderSeoHead } from "../seo/render.js";
+import { absoluteUrl, renderFaviconHead, renderSeoHead } from "../seo/render.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(__dirname, "..");
 
 const SEO_START = "<!-- ff-seo:start -->";
 const SEO_END = "<!-- ff-seo:end -->";
+const FAVICON_START = "<!-- ff-favicon:start -->";
+const FAVICON_END = "<!-- ff-favicon:end -->";
 
 /** Strip legacy and generated SEO tags from head */
 function stripSeoBlock(html) {
@@ -40,6 +42,24 @@ function stripSeoBlock(html) {
   for (const pattern of patterns) {
     next = next.replace(pattern, "");
   }
+
+  return next;
+}
+
+/** Strip generated and legacy favicon tags from head */
+function stripFaviconBlock(html) {
+  let next = html;
+
+  if (next.includes(FAVICON_START) && next.includes(FAVICON_END)) {
+    const start = next.indexOf(FAVICON_START);
+    const end = next.indexOf(FAVICON_END) + FAVICON_END.length;
+    next = next.slice(0, start) + next.slice(end);
+  }
+
+  next = next.replace(
+    /<link\s+rel="(?:icon|apple-touch-icon|manifest)"[^>]*\/?>\s*/gi,
+    ""
+  );
 
   return next;
 }
@@ -93,8 +113,8 @@ for (const page of Object.values(pages)) {
   }
 
   const original = fs.readFileSync(filePath, "utf8");
-  const stripped = stripSeoBlock(original);
-  const block = renderSeoHead(page);
+  const stripped = stripFaviconBlock(stripSeoBlock(original));
+  const block = `${renderSeoHead(page)}\n${renderFaviconHead()}`;
   const next = insertSeoBlock(stripped, block);
 
   if (next !== original) {

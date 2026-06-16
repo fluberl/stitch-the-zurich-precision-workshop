@@ -12,6 +12,15 @@ export const site = {
   twitterCard: "summary_large_image",
 };
 
+/** Site-wide favicon assets (root-relative paths). */
+export const favicon = {
+  ico: "/favicon.ico",
+  png512: "/images/ff-favicon.png",
+  png32: "/icon.png",
+  apple: "/apple-touch-icon.png",
+  manifest: "/site.webmanifest",
+};
+
 export const event = {
   nameDe: "Führen & Folgen Workshop",
   nameEn: "Leading & Following Workshop",

@@ -1,4 +1,4 @@
-import { event, site } from "./config.js";
+import { event, favicon, site } from "./config.js";
 
 /** @param {string} value */
 function escapeAttr(value) {
@@ -61,6 +61,19 @@ function pagesDescriptionDe() {
 
 function pagesDescriptionEn() {
   return "A three-day workshop in Zurich exploring how we orient and act with others when conditions shift.";
+}
+
+export function renderFaviconHead() {
+  const lines = [
+    "<!-- ff-favicon:start -->",
+    `<link rel="icon" href="${escapeAttr(favicon.ico)}" sizes="any">`,
+    `<link rel="icon" type="image/png" href="${escapeAttr(favicon.png512)}" sizes="512x512">`,
+    `<link rel="icon" type="image/png" href="${escapeAttr(favicon.png32)}" sizes="32x32">`,
+    `<link rel="apple-touch-icon" href="${escapeAttr(favicon.apple)}">`,
+    `<link rel="manifest" href="${escapeAttr(favicon.manifest)}">`,
+    "<!-- ff-favicon:end -->",
+  ];
+  return lines.join("\n");
 }
 
 /** @param {import('./types.js').PageSeoConfig} page */
