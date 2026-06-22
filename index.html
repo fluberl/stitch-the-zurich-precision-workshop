@@ -157,6 +157,30 @@
             background-color: #fcf8f8;
             color: #1c1b1b;
         }
+        .ff-qualification-list {
+            list-style-type: disc;
+            list-style-position: outside;
+            padding-left: 1.25rem;
+            font-size: 15px;
+            line-height: 1.65;
+        }
+        .ff-qualification-list > li {
+            padding-left: 0.35rem;
+        }
+        .ff-qualification-list > li::marker {
+            color: #75777a;
+        }
+        .ff-qualification-list > li + li {
+            margin-top: 14px;
+        }
+        @media (min-width: 640px) {
+            .ff-qualification-list {
+                font-size: 16px;
+            }
+            .ff-qualification-list > li + li {
+                margin-top: 16px;
+            }
+        }
         @media (max-width: 767px) and (min-width: 640px) {
             #overview > h1 {
                 font-size: 44px !important;
@@ -270,21 +294,21 @@
 <div class="w-full bg-surface-container border border-outline-variant mt-28 mb-24 pt-12 px-stack-lg pb-stack-lg md:px-stack-xl md:pb-stack-xl">
 <div class="grid grid-cols-1 md:grid-cols-2 gap-stack-xl">
 <div>
-<h3 class="font-h3 text-h3 mb-stack-md">Für wen?</h3>
-<ul class="text-body-sm text-secondary space-y-stack-sm">
-<li>Du arbeitest in Situationen, in denen Timing, Interaktionsqualität und Entscheidungen unter Druck eine Rolle spielen.</li>
-<li>Du bist bereit, automatische Reaktionen wahrzunehmen und in der Praxis damit zu arbeiten.</li>
-<li>Du schätzt direktes Feedback, wiederholte Anwendung und sichtbare Veränderungen in der Koordination.</li>
-<li>Du bist bereit, präsent und aufmerksam in einer kleinen engagierten Gruppe zu arbeiten.</li>
+<h3 class="font-h3 text-h3 mb-stack-lg">Für wen?</h3>
+<ul class="ff-qualification-list text-on-surface-variant max-w-[58ch]">
+<li>Du arbeitest in Situationen, in denen unter Druck Timing, Interaktion und Koordination entscheidend werden.</li>
+<li>Du bist bereit, automatische Reaktionen in live Praxis zu beobachten und damit zu arbeiten.</li>
+<li>Du nimmst direktes Feedback, Wiederholung und Anpassung in realer Interaktion an.</li>
+<li>Du bist bereit, mit Partnern in Bewegung und direktem Kontakt zu arbeiten — nicht nur zuzuschauen oder zu besprechen.</li>
 </ul>
 </div>
 <div>
-<h3 class="font-h3 text-h3 mb-stack-md">Für wen nicht?</h3>
-<ul class="text-body-sm text-secondary space-y-stack-sm">
-<li>Menschen, die ein passives Seminarformat mit minimaler praktischer Beteiligung suchen.</li>
-<li>Menschen, die ein Entspannungs- oder Retreat-Angebot erwarten.</li>
-<li>Menschen, die ein Charisma-, Präsentations- oder Selbstdarstellungstraining suchen.</li>
-<li>Menschen, die nicht bereit sind für direktes Feedback und fortlaufende Anpassung in realer Interaktion.</li>
+<h3 class="font-h3 text-h3 mb-stack-lg">Für wen nicht?</h3>
+<ul class="ff-qualification-list text-on-surface-variant max-w-[58ch]">
+<li>Du suchst ein passives Seminarformat mit minimaler praktischer Beteiligung.</li>
+<li>Du erwartest Entspannung, Retreat-Atmosphäre oder ein Wellness-Angebot.</li>
+<li>Du bist nicht bereit, in realer Interaktion Feedback zu empfangen und dich anzupassen.</li>
+<li>Du suchst vor allem Erklärung, Gespräch oder Theorie — ohne wiederholte live Praxis in Bewegung.</li>
 </ul>
 </div>
 </div>
@@ -374,24 +398,21 @@
 <p class="text-body-md text-secondary mb-stack-xl">Dieser Workshop arbeitet mit wiederholter Beobachtung, Interaktion und Anpassung unter realen Bedingungen. Ziel ist nicht Perfektion, sondern verlässlichere Koordination, wenn die Anforderungen steigen.</p>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-stack-md sm:gap-stack-lg md:gap-gutter border border-outline-variant">
 <div class="p-3 sm:p-stack-lg md:p-stack-xl border-b md:border-b-0 md:border-r border-outline-variant">
-<h3 class="font-h3 text-h3 mb-stack-md">Was Du erwarten kannst</h3>
-<ul class="text-body-sm text-secondary space-y-stack-sm max-w-[58ch]">
-<li>Ein klareres Gespür für Aufwand, Timing und Qualität im Kontakt.</li>
-<li>Mehr Stabilität in der Koordination unter Druck.</li>
-<li>Ein besseres Erkennen automatischer Reaktionsmuster.</li>
-<li>Mehr Anpassungsfähigkeit in wechselnden Situationen.</li>
-<li>Ein bewussterer Einsatz von Aufmerksamkeit, Bewegung und Kommunikation.</li>
-<li>Eine bessere Übertragung zwischen der Arbeit im Workshop und dem beruflichen oder persönlichen Alltag.</li>
+<h3 class="font-h3 text-h3 mb-stack-lg">Was Du erwarten kannst</h3>
+<ul class="ff-qualification-list text-on-surface-variant max-w-[58ch]">
+<li>Du wiederholst Praxis mit unmittbarem Feedback und erneuter Anwendung, bis Veränderungen in Bewegung und Interaktion beobachtbar sind.</li>
+<li>Du nimmst Aufwand, Timing und Qualität im Kontakt schärfer wahr.</li>
+<li>Unter steigendem Druck werden Koordination und automatische Reaktionen für dich lesbarer.</li>
+<li>Für dich zählt Übertragung — was sich danach in beruflichen oder persönlichen Situationen anders zeigt, nicht die Intensität des Erlebnisses im Raum.</li>
 </ul>
 </div>
 <div class="p-3 sm:p-stack-lg md:p-stack-xl">
-<h3 class="font-h3 text-h3 mb-stack-md">Was dieser Workshop nicht verspricht</h3>
-<ul class="text-body-sm text-secondary space-y-stack-sm max-w-[58ch]">
-<li>Dieser Workshop ist kein Therapieangebot.</li>
-<li>Dieser Workshop ist kein Motivationsseminar.</li>
-<li>Dieser Workshop ist kein Charisma-, Präsentations- oder Selbstdarstellungstraining.</li>
-<li>Dieser Workshop verspricht keine Symptomfreiheit.</li>
-<li>Dieser Workshop ersetzt nicht die langfristige fachliche Praxis im jeweiligen Berufsfeld.</li>
+<h3 class="font-h3 text-h3 mb-stack-lg">Was dieser Workshop nicht verspricht</h3>
+<ul class="ff-qualification-list text-on-surface-variant max-w-[58ch]">
+<li>Dieser Workshop ist für dich kein Therapieangebot.</li>
+<li>Dieser Workshop ist für dich kein Motivations- oder Inspirationsseminar.</li>
+<li>Dieser Workshop ist für dich kein Charisma-, Präsentations- oder Selbstdarstellungstraining.</li>
+<li>Dieser Workshop garantiert dir keine Ergebnisse und ersetzt nicht deine langfristige fachliche Praxis.</li>
 </ul>
 </div>
 </div>

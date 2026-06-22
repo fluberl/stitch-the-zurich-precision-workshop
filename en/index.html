@@ -157,6 +157,30 @@
             background-color: #fcf8f8;
             color: #1c1b1b;
         }
+        .ff-qualification-list {
+            list-style-type: disc;
+            list-style-position: outside;
+            padding-left: 1.25rem;
+            font-size: 15px;
+            line-height: 1.65;
+        }
+        .ff-qualification-list > li {
+            padding-left: 0.35rem;
+        }
+        .ff-qualification-list > li::marker {
+            color: #75777a;
+        }
+        .ff-qualification-list > li + li {
+            margin-top: 14px;
+        }
+        @media (min-width: 640px) {
+            .ff-qualification-list {
+                font-size: 16px;
+            }
+            .ff-qualification-list > li + li {
+                margin-top: 16px;
+            }
+        }
         @media (max-width: 767px) and (min-width: 640px) {
             #overview > h1 {
                 font-size: 44px !important;
@@ -270,21 +294,21 @@
 <div class="w-full bg-surface-container border border-outline-variant mt-28 mb-24 pt-12 px-stack-lg pb-stack-lg md:px-stack-xl md:pb-stack-xl">
 <div class="grid grid-cols-1 md:grid-cols-2 gap-stack-xl">
 <div>
-<h3 class="font-h3 text-h3 mb-stack-md">For whom</h3>
-<ul class="text-body-sm text-secondary space-y-stack-sm">
-<li>You work in roles where timing, interaction quality, and decisions under pressure matter.</li>
-<li>You are willing to observe automatic reactions and adjust them in live practice.</li>
-<li>You value direct feedback, repeated application, and noticeable shifts in coordination.</li>
-<li>You are willing to show up — physically present and focused — in a small committed group.</li>
+<h3 class="font-h3 text-h3 mb-stack-lg">Who it is for</h3>
+<ul class="ff-qualification-list text-on-surface-variant max-w-[58ch]">
+<li>You work in situations where timing, interaction, and coordination matter under pressure.</li>
+<li>You are willing to observe automatic reactions in live practice and work with them.</li>
+<li>You accept direct feedback, repetition, and adjustment in real interaction.</li>
+<li>You are willing to work with partners in movement and direct contact — not only to observe or discuss.</li>
 </ul>
 </div>
 <div>
-<h3 class="font-h3 text-h3 mb-stack-md">Not for whom</h3>
-<ul class="text-body-sm text-secondary space-y-stack-sm">
-<li>People looking for a passive seminar format with minimal practical engagement.</li>
-<li>People expecting relaxation-oriented retreat programming or retreat atmosphere.</li>
-<li>People seeking performative presentation or charisma-focused training.</li>
-<li>People not ready for direct feedback and iterative adjustment in real interaction.</li>
+<h3 class="font-h3 text-h3 mb-stack-lg">Who it is not for</h3>
+<ul class="ff-qualification-list text-on-surface-variant max-w-[58ch]">
+<li>You are looking for a passive seminar format with minimal practical participation.</li>
+<li>You expect relaxation, retreat atmosphere, or a wellness offering.</li>
+<li>You are not willing to receive feedback and adjust in real interaction.</li>
+<li>You are looking mainly for explanation, conversation, or theory — without repeated live practice in movement.</li>
 </ul>
 </div>
 </div>
@@ -369,29 +393,26 @@
 <section class="px-3 sm:px-stack-lg md:px-margin py-stack-lg sm:py-stack-xl lg:py-[120px] max-w-[1440px] mx-auto border-b border-outline-variant">
 <div class="max-w-[980px] mb-stack-md">
 <span class="font-label-caps text-label-caps text-secondary mb-stack-md block">EXPECTATIONS</span>
-<h2 class="font-h1 text-[26px] leading-[1.25] sm:text-[28px] md:text-h1 md:leading-[1.2] mb-stack-md">Expected Outcomes /<br class="md:hidden"/> <span class="whitespace-nowrap">Not Promised Outcomes</span></h2>
+<h2 class="font-h1 text-[26px] leading-[1.25] sm:text-[28px] md:text-h1 md:leading-[1.2] mb-stack-md">What to expect —<br class="md:hidden"/> <span class="whitespace-nowrap">and what this workshop does not promise.</span></h2>
 </div>
 <p class="text-body-md text-secondary mb-stack-xl">This workshop works through repeated observation, interaction, and adjustment in live conditions. The objective is not performance perfection, but more reliable coordination under changing demands.</p>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-stack-md sm:gap-stack-lg md:gap-gutter border border-outline-variant">
 <div class="p-3 sm:p-stack-lg md:p-stack-xl border-b md:border-b-0 md:border-r border-outline-variant">
-<h3 class="font-h3 text-h3 mb-stack-md">Expected Outcomes</h3>
-<ul class="text-body-sm text-secondary space-y-stack-sm max-w-[58ch]">
-<li>Clearer perception of effort and timing in live interaction.</li>
-<li>More stable coordination under interaction pressure.</li>
-<li>Improved recognition of automatic reaction patterns.</li>
-<li>Greater adaptability during changing relational demands.</li>
-<li>More efficient use of attention, movement, and communication.</li>
-<li>Better transfer between workshop practice and real professional situations.</li>
+<h3 class="font-h3 text-h3 mb-stack-lg">What to expect</h3>
+<ul class="ff-qualification-list text-on-surface-variant max-w-[58ch]">
+<li>You repeat practice with immediate feedback and renewed application, until changes in movement and interaction are observable.</li>
+<li>You perceive effort, timing, and contact quality more sharply.</li>
+<li>Under increasing pressure, coordination and automatic reactions become more readable for you.</li>
+<li>What counts for you is transfer — what shows up differently afterward in professional or personal situations, not the intensity of the in-room experience.</li>
 </ul>
 </div>
 <div class="p-3 sm:p-stack-lg md:p-stack-xl">
-<h3 class="font-h3 text-h3 mb-stack-md">Not Promised</h3>
-<ul class="text-body-sm text-secondary space-y-stack-sm max-w-[58ch]">
-<li>This workshop is not intended as a therapy format.</li>
-<li>This workshop is not intended as a motivational seminar.</li>
-<li>This workshop is not intended as performance display or charisma training.</li>
-<li>This workshop is not intended to promise symptom elimination.</li>
-<li>This workshop is not intended to replace long-term professional practice in participants' own fields.</li>
+<h3 class="font-h3 text-h3 mb-stack-lg">What this workshop does not promise</h3>
+<ul class="ff-qualification-list text-on-surface-variant max-w-[58ch]">
+<li>This workshop is not a therapy offering.</li>
+<li>This workshop is not a motivation or inspiration seminar.</li>
+<li>This workshop is not charisma, presentation, or self-display training.</li>
+<li>This workshop does not guarantee results and does not replace your long-term professional practice.</li>
 </ul>
 </div>
 </div>
